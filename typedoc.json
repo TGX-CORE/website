@@ -1,0 +1,60 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "out": "./docs/documentation/",
+    
+    "entryPoints": ["../tgx-core/src/index.ts"],
+    "tsconfig": "../tgx-core/tsconfig.json",
+    
+    "plugin": [
+        "typedoc-plugin-markdown",
+        "@tgx-core/website"
+    ],
+
+    "name": "TGX-CORE",
+    "theme": "tgx-core",
+
+    "readme": "none",
+    "useTsLinkResolution" : true,
+    
+    "excludeExternals": true,
+
+    "blockTags": [
+        "@defaultValue",
+        "@deprecated",
+        "@example",
+        "@param",
+        "@privateRemarks",
+        "@remarks",
+        "@returns",
+        "@see",
+        "@throws",
+        "@typeParam",
+        "@author",
+        "@callback",
+        "@category",
+        "@categoryDescription",
+        "@default",
+        "@document",
+        "@extends",
+        "@augments",
+        "@yields",
+        "@group",
+        "@groupDescription",
+        "@import",
+        "@inheritDoc",
+        "@jsx",
+        "@license",
+        "@module",
+        "@prop",
+        "@property",
+        "@return",
+        "@satisfies",
+        "@since",
+        "@template",
+        "@type",
+        "@typedef",
+        "@reference",
+        "@information"
+    ]
+
+}
