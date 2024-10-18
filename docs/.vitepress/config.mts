@@ -86,6 +86,8 @@ export default defineConfig({
 
   ignoreDeadLinks: true,
 
+  base: '/website/',
+
   markdown: {
     config: (md) => {
       md.core.ruler.push('replace_keywords_and_types', (state) => {
