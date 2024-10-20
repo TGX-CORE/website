@@ -11,7 +11,7 @@ prev: false
 export Function
 # nest
 
-Reads an object including nested objects but ignores classes and arrays.
+Reads an object including nested objects but ignores classes, Return the duplicated and modified object.
 
 ## Constructor
  ```ts
@@ -20,8 +20,8 @@ Reads an object including nested objects but ignores classes and arrays.
  
  | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `object` | `any` | The object to read. |
+| `object` = `{}` | `any` | The object to read and nest. |
 | `additional` | [`Nesting`](../interfaces/Nesting.md) | Additional options on how to read the object. |
-| `fn` | `Function` | The callback function to call whenever a key and value has been read. |
+| `fn` | [`NestCallback`](../type-aliases/NestCallback.md) | The callback function to call whenever a key and value has been read. Additional information is available. |
 
-Return: void
+Return: any

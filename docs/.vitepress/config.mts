@@ -169,58 +169,11 @@ export default defineConfig({
           )
         }
       ],
-
-      // '/': [
-      //   {
-      //     text: 'Documentation',
-      //     items: generateSidebarItems(
-      //       path.resolve(__dirname, '../documentation'), 
-      //       '/documentation'
-      //     )
-      //   },
-      //   {
-      //     text: 'Guidebook',
-      //     items: generateSidebarItems(
-      //       path.resolve(__dirname, '../packages/tgx-core/guidebook'), 
-      //       '/packages/tgx-core/guidebook'
-      //     )
-      //   }
-      // ]
     },
-      // {
-      //   '/packages/tgx-core/': [
-
-      //   ],
-      //   text: 'Packages',
-      //   items: [
-      //     {
-      //       text: 'tgx-core',
-      //       collapsed: true,
-      //       link: '/packages/tgx-core/guidebook/An Introduction',
-      //       items: [
-      //         {
-      //           text: 'Documentation',
-      //           collapsed: true,
-      //           items: generateSidebarItems(
-      //             path.resolve(__dirname, '../packages/tgx-core/documentation'), 
-      //             '/packages/tgx-core/documentation'
-      //           )
-      //         },
-      //         {
-      //           text: 'Guidebook',
-      //           collapsed: true,
-      //           items: generateSidebarItems(
-      //             path.resolve(__dirname, '../packages/tgx-core/guidebook'), 
-      //             '/packages/tgx-core/guidebook'
-      //           )
-      //         }
-      //       ]
-      //     }
-      //   ]
-      // }
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/TGX-CORE/tgx-core' }
     ]
+    
   }
 })

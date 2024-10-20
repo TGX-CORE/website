@@ -9,9 +9,10 @@ Client.on(ClientEvent.ShippingQuery, ( shipping ) => {
 
     shipping.ok(new ShippingOptions(
         ShippingOption('shipping_option_1', 'Shipping Option 1',
-            new LabeledPrices(
-                LabeledPrice('Shipping Fee', '1820') // $18.20
-        ))
+            new LabeledPrices()
+                .add('Base Fee', '360') // $3.60
+                .add('Tax', '110') // $1.10, hence the total would be 4.70
+        )
     ))
 
     // OR

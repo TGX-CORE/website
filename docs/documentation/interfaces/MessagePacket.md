@@ -89,7 +89,7 @@ export Interface
 
 #### has_protected_content? : `true`
 
-#### invoice? : [`SendInvoicePayload`](./SendInvoicePayload.md)
+#### invoice? : [`InvoicePacket`](./InvoicePacket.md)
 
 #### is_automatic_forward? : `true`
 

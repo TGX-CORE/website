@@ -15,12 +15,12 @@ Sets the default values of the default object to the context
 
 ## Constructor
  ```ts
- defaults( defaults, context, topLayer )
+ defaults( _defaults, context, topLayer )
  ```
  
  | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `defaults` | `any` | The default values. |
+| `_defaults` | `any` | The default values. |
 | `context` = `{}` | `any` | The context to replace with defaults. |
 | `topLayer?` | `boolean` | Pass true to ignore nested objects. |
 

@@ -10,6 +10,8 @@ prev: false
 
 export Interface
 # SendInvoicePayload
+#### extends
+ [`CreateInvoiceLinkPayload`](./CreateInvoiceLinkPayload.md)
 
 ## Properties
 
@@ -47,7 +49,7 @@ export Interface
 
 #### photo_width? : `number`
 
-#### prices : [`LabeledPrices`](../classes/LabeledPrices.md)
+#### prices : [`LabeledPrice[]`](./LabeledPrice.md)
 
 #### protect_content? : `boolean`
 

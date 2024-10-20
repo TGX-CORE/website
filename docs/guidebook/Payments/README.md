@@ -32,11 +32,11 @@ To start accepting payments, you'll need a payment provider.
 Set the token for the client;
 
 ```ts
-Client.invoices.setToken('<provider_token>')
+Client.invoices.setToken(<provider_token>)
 
 // OR
 
-Client.intialize('<token>', '<provider_token>')
+Client.intialize(<token>, <provider_token>)
 ```
 
 ## Reference

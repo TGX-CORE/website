@@ -23,4 +23,4 @@ See the exp parameter in [currencies.json](https://core.telegram.org/bots/paymen
 #### label : `string`
  The label of the portion of the price.
 
-An example of the label would be; Base Shipping Fee, Taxes, Transaction Fee, etc.
+An example of the label would be Base Shipping Fee, Taxes, Transaction Fee, etc.
