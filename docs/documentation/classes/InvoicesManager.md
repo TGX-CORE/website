@@ -11,7 +11,7 @@ prev: false
 export Class
 # InvoicesManager
 #### extends
- `CachedManager`\<`string`, `Invoice`\>
+ `CachedManager`\<`string`, [`Invoice`](./Invoice.md)\>
 
 ## Constructor
  ```ts
@@ -52,7 +52,7 @@ Creates an invoice and store it in the manger.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `string` | The id of the invoices to store as. |
-| `invoice` | [`StoredInvoice`](../interfaces/StoredInvoice.md) | The payload of the invoice. |
+| `invoice` | [`Invoice`](./Invoice.md) | The payload of the invoice. |
 
 Returns: `any`
 

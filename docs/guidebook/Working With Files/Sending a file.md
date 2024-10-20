@@ -18,7 +18,7 @@ There are three ways to send files (photos, stickers, audio, media, etc.):
     message.reply(
         MessagePayloadMethod.Photo,
         {
-            photo: new File('../media/photo.png')
+            photo: new File('C:/../../../media/photo.png')
         }
     )
     ```
@@ -30,7 +30,7 @@ There are three ways to send files (photos, stickers, audio, media, etc.):
             photo: 'attach://photo_name'
         },
         new FormdataBuilder()
-            .append('photo_name', '../media/photo.png', --FormData.AppendOptions)
+            .append('photo_name', 'C:/../../../media/photo.png', --FormData.AppendOptions)
     )
     ```
 

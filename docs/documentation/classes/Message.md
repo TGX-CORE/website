@@ -119,7 +119,7 @@ export Class
 
 #### has_protected_content? : `true`
 
-#### invoice? : [`SendInvoicePayload`](../interfaces/SendInvoicePayload.md)
+#### invoice? : [`InvoicePacket`](../interfaces/InvoicePacket.md)
 
 #### is_automatic_forward? : `true`
 
@@ -296,6 +296,14 @@ Replies a message to the current message.
 | `pointer` | [`MessagePayloadMethod`](../enumerations/MessagePayloadMethod.md) | The type or method of the message. |
 | `payload` | `Partial`\<[`MessagePayload`](../type-aliases/MessagePayload.md)\> | What the message will contain. |
 | `form_data?` | [`FormDataBuilder`](./FormDataBuilder.md) | FormData for uploading a media with the message. |
+
+Returns: `Promise`\<`boolean` \| [`Message`](./Message.md)\>
+
+#### $asyncreplyInvoice( id )
+Replies an invoice message to the currenct message. Uses auxiliaries.
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `id` | `string` | The id of the invoice. |
 
 Returns: `Promise`\<`boolean` \| [`Message`](./Message.md)\>
 

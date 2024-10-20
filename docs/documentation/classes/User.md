@@ -49,7 +49,7 @@ export Class
 
 #### last_name? : `string`
 
-#### message_thread_id : `undefined` \| `number`
+#### message_thread_id? : `number`
 
 #### supports_inline_queries? : `boolean`
 
@@ -92,8 +92,16 @@ Sends a message to the current channel.
 
 Returns: `Promise`\<[`Message`](./Message.md)\>
 
+#### $asyncsendInvoice( id )
+Sends the stored invoice with the id to the current chat.
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `id` | `string` | The id of the invoice. |
+
+Returns: `Promise`\<`void` \| [`Message`](./Message.md)\>
+
 #### $asyncsendText( text )
-Sends a text message to the current channel.
+Sends a text message to the current chat.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `text` | `string` | The text content of the message. |

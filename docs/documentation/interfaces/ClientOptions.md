@@ -34,4 +34,4 @@ export Interface
  to load all registries or an array of specific registries.
 
 #### sweep? : `string` \| `boolean`
- Set to *true* to sweep main directory or set to a path relative from the current working directory to sweep a specific path.
+ Set to *true* to sweep main directory or set to an absolute path to sweep a specific path.

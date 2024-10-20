@@ -44,15 +44,6 @@ export Class
 
 Returns: `Promise`\<`any`\>
 
-#### serialize( object, output )
-
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `object` | `any` | |
-| `output` = `{}` | `any` | |
-
-Returns: `any`
-
 #### setToken( token )
 
 | Parameter | Type | Description |

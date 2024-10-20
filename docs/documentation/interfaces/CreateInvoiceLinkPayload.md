@@ -39,7 +39,7 @@ export Interface
 
 #### photo_width? : `number`
 
-#### prices : [`LabeledPrices`](../classes/LabeledPrices.md)
+#### prices : [`LabeledPrice[]`](./LabeledPrice.md)
 
 #### provider_data? : `string`
 

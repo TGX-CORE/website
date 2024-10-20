@@ -12,7 +12,7 @@
 		{
 			"type": "npm",
 			"script": "docs:dev",
-			"group": "test",
+			"group": "build",
 			"problemMatcher": [],
 			"label": "npm: docs:dev",
 			"detail": "vitepress dev docs"

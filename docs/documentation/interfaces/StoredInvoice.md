@@ -10,6 +10,8 @@ prev: false
 
 export Interface
 # StoredInvoice
+#### extends
+ `Omit`\<[`SendInvoicePayload`](./SendInvoicePayload.md), `"chat_id"` \| `"message_thread_id"` \| `"provider_token"` \| `"prices"`\>
 
 ## Properties
 

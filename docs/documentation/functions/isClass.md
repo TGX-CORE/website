@@ -11,7 +11,7 @@ prev: false
 export Function
 # isClass
 
-Checks whether the value is a class.
+Checks whether the value is a class or an instance of a class.
 
 ## Constructor
  ```ts
@@ -20,6 +20,6 @@ Checks whether the value is a class.
  
  | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `value` | `unknown` | The value to check. |
+| `value` | `any` | The value to check. |
 
 Return: boolean
