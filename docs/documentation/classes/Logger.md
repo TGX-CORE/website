@@ -24,46 +24,48 @@ export Class
 
 #### level : [`LogLevel`](../enumerations/LogLevel.md)
 
-#### $static$readonly levels : `Map`\<[`LogLevel`](../enumerations/LogLevel.md), [`LogMethods`](../type-aliases/LogMethods.md)\>
+#### $static$readonly levels : `Map`<[`LogLevel`](../enumerations/LogLevel.md), [`LogMethods`](../type-aliases/LogMethods.md)>
+ 
+ > default: ...
 
 ## Methods
 
 #### debug( ...argumants )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...argumants` | `any[]` | |
-
-Returns: `void`
+> 
+> 
+> Returns: `void`
 
 #### error( ...argumants )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...argumants` | `any[]` | |
-
-Returns: `void`
+> 
+> 
+> Returns: `void`
 
 #### has( level )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `level` | [`LogLevel`](../enumerations/LogLevel.md) | |
-
-Returns: `boolean`
+> 
+> 
+> Returns: `boolean`
 
 #### info( ...argumants )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...argumants` | `any[]` | |
-
-Returns: `void`
+> 
+> 
+> Returns: `void`
 
 #### warn( ...argumants )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...argumants` | `any[]` | |
-
-Returns: `void`
+> 
+> 
+> Returns: `void`

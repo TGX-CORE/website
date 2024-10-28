@@ -11,7 +11,7 @@ prev: false
 export Class
 # ChosenInlineResult
 #### extends
- `BaseClass`\<[`ChosenInlineResult`](./ChosenInlineResult.md), [`ChosenInlineResultPacket`](../interfaces/ChosenInlineResultPacket.md)\>
+ `BaseClass`<[`ChosenInlineResult`](./ChosenInlineResult.md), [`ChosenInlineResultPacket`](../interfaces/ChosenInlineResultPacket.md)>
 #### implements
  [`ChosenInlineResultPacket`](../interfaces/ChosenInlineResultPacket.md)
 

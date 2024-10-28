@@ -46,7 +46,7 @@ The
 #### me : [`MeManager`](./MeManager.md)
 
 #### options : [`ClientOptions`](../interfaces/ClientOptions.md)
- The options provided to the client.
+ > The options provided to the client.
 
 #### payments : [`PaymentsManager`](./PaymentsManager.md)
 
@@ -57,7 +57,7 @@ The
 #### registries : `RegistryManager`
 
 #### $readonly token? : `string`
- The token provided by Telegram for your client.
+ > The token provided by Telegram for your client.
 
 #### users : [`UsersManager`](./UsersManager.md)
 
@@ -66,15 +66,16 @@ The
 ## Methods
 
 #### $asyncintialize( token, provider_token )
-Intializes your client and the poll manager, also updating the me manager.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `token` = `...` | `string` | Your token for authorization, or stored in process.env as 'TELEGRAM_TOKEN'. |
 | `provider_token` = `...` | `string` | Your token provided by your payment provider, or stored in process.env as 'PAYMENT_PROVIDER_TOKEN'. |
-
-Returns: `Promise`\<`boolean`\>
+> Intializes your client and the poll manager, also updating the me manager.
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncupdate( )
-Updates the me manager of the client.
 
-Returns: `Promise`\<`void`\>
+> Updates the me manager of the client.
+> 
+> Returns: `Promise`<`void`>

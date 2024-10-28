@@ -25,9 +25,9 @@ export Class
 ## Methods
 
 #### add( ...results )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...results` | [`InlineQueryResult[]`](../type-aliases/InlineQueryResult.md) | The result to add to the current results. |
-
-Returns: `void`
+> 
+> 
+> Returns: `void`

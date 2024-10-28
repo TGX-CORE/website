@@ -11,9 +11,9 @@ prev: false
 export Class
 # CallbackQuery
 #### extends
- `BaseClass`\<[`CallbackQuery`](./CallbackQuery.md), [`CallbackQueryPacket`](../interfaces/CallbackQueryPacket.md)\>
+ `BaseClass`<[`CallbackQuery`](./CallbackQuery.md), [`CallbackQueryPacket`](../interfaces/CallbackQueryPacket.md)>
 #### implements
- `Partial`\<[`CallbackQueryPacket`](../interfaces/CallbackQueryPacket.md)\>
+ `Partial`<[`CallbackQueryPacket`](../interfaces/CallbackQueryPacket.md)>
 
 ## Constructor
  ```ts

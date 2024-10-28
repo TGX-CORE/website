@@ -18,7 +18,8 @@ export Interface
 #### api? : [`APIManagerOptions`](./APIManagerOptions.md)
 
 #### endpoint? : [`Endpoint`](../enumerations/Endpoint.md)
- The method for receiving updates from Telegram.
+ > The method for receiving updates from Telegram.
+ > default: `Endpoint.Poll`
 
 #### logger? : [`LoggerOptions`](./LoggerOptions.md)
 
@@ -29,9 +30,9 @@ export Interface
 #### poll? : [`PollManagerOptions`](./PollManagerOptions.md)
 
 #### registries? : [`Registries.All`](../enumerations/Registries.md#all) \| [`Registries[]`](../enumerations/Registries.md)
- Set to 
+ > Set to 
 `Registries.All`
  to load all registries or an array of specific registries.
 
 #### sweep? : `string` \| `boolean`
- Set to *true* to sweep main directory or set to an absolute path to sweep a specific path.
+ > Set to *true* to sweep main directory or set to an absolute path to sweep a specific path.

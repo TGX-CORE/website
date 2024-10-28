@@ -16,3 +16,5 @@ export Interface
 #### command : `string`
 
 #### description : `string`
+
+#### ignore? : `Boolean`

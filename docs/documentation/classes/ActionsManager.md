@@ -11,7 +11,7 @@ prev: false
 export Class
 # ActionsManager
 #### extends
- `BaseManager`\<[`ActionsOptions`](../interfaces/ActionsOptions.md)\>
+ `BaseManager`<[`ActionsOptions`](../interfaces/ActionsOptions.md)>
 
 ## Constructor
  ```ts
@@ -33,9 +33,9 @@ export Class
 ## Methods
 
 #### register( context_piece )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `context_piece` | `any` | |
-
-Returns: `void`
+> 
+> 
+> Returns: `void`

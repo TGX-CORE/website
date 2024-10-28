@@ -11,7 +11,7 @@ prev: false
 export Class
 # SuccessfulPayment
 #### extends
- `BaseClass`\<[`SuccessfulPayment`](./SuccessfulPayment.md), [`SerializedSuccessfulPayment`](../interfaces/SerializedSuccessfulPayment.md)\>
+ `BaseClass`<[`SuccessfulPayment`](./SuccessfulPayment.md), [`SerializedSuccessfulPayment`](../interfaces/SerializedSuccessfulPayment.md)>
 #### implements
  [`SerializedSuccessfulPayment`](../interfaces/SerializedSuccessfulPayment.md)
 
@@ -61,4 +61,6 @@ export Class
 
 #### $asyncrefund( )
 
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>

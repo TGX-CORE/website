@@ -11,7 +11,7 @@ prev: false
 export Class
 # MessageReaction
 #### extends
- `BaseClass`\<[`MessageReaction`](./MessageReaction.md), [`MessageReactionPacket`](../interfaces/MessageReactionPacket.md)\>
+ `BaseClass`<[`MessageReaction`](./MessageReaction.md), [`MessageReactionPacket`](../interfaces/MessageReactionPacket.md)>
 
 ## Constructor
  ```ts

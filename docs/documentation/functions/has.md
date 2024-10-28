@@ -21,6 +21,6 @@ Checks whether the array has the matched value or passes the function.
  | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `array` = `[]` | `any[]` | The array that contains the value. |
-| `value` | `any` | The value to check or the validator. |
+| `value` | `any` | The value to check or pass a function. |
 
 Return: boolean

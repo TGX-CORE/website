@@ -16,19 +16,19 @@ export Interface
 ## Properties
 
 #### dispose? : `boolean`
- Wether to emit 'dispose' event when a collected data is disposed or removed.
+ > Wether to emit 'dispose' event when a collected data is disposed or removed.
 
 #### filter? : [`CollectorFilter`](../type-aliases/CollectorFilter.md)
- The filter of the collector.
+ > The filter of the collector.
 
 #### idle? : `number`
- The maximum time for the collector to wait after a collection in milliseconds.
+ > The maximum time for the collector to wait after a collection in milliseconds.
 
 #### max? : `number`
- The maximum count to collect.
+ > The maximum count to collect.
 
 #### maxProcess? : `number`
- The maximum count of received datas.
+ > The maximum count of received datas.
 
 #### time? : `number`
- The maximum time for the collector to wait in milliseconds.
+ > The maximum time for the collector to wait in milliseconds.

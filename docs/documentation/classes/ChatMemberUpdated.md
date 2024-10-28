@@ -11,7 +11,7 @@ prev: false
 export Class
 # ChatMemberUpdated
 #### extends
- `BaseClass`\<[`ChatMemberUpdated`](./ChatMemberUpdated.md), [`ChatMemberUpdatedPacket`](../interfaces/ChatMemberUpdatedPacket.md)\>
+ `BaseClass`<[`ChatMemberUpdated`](./ChatMemberUpdated.md), [`ChatMemberUpdatedPacket`](../interfaces/ChatMemberUpdatedPacket.md)>
 #### implements
  [`ChatMemberUpdatedPacket`](../interfaces/ChatMemberUpdatedPacket.md)
 

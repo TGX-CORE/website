@@ -11,7 +11,7 @@ prev: false
 export abstract Class
 # Auxiliary
 #### extends
- `Piece`\<[`AuxiliaryMeta`](../interfaces/AuxiliaryMeta.md)\>
+ `Piece`<[`AuxiliaryMeta`](../interfaces/AuxiliaryMeta.md)>
 
 ## Constructor
  ```ts
@@ -29,20 +29,22 @@ export abstract Class
 
 #### enabled : `boolean`
 
-#### name : `string`
+#### name? : `string`
 
 #### registry : `AuxiliariesRegistry`
 
 ## Methods
 
 #### load( ...args )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...args` | `unknown[]` | |
-
-Returns: `void`
+> 
+> 
+> Returns: `void`
 
 #### onLoad( )
 
-Returns: `undefined`
+> 
+> 
+> Returns: `undefined`

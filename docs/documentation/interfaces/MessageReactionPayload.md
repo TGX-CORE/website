@@ -14,13 +14,13 @@ export Interface
 ## Properties
 
 #### chat_id? : `string` \| `number`
- The id of the chat.
+ > The id of the chat.
 
 #### is_big? : `boolean`
- Pass *True* to set the reaction with a big animation
+ > Pass *True* to set the reaction with a big animation
 
 #### message_id? : `number`
- The id of the message.
+ > The id of the message.
 
 #### reaction? : [`Reactions`](../classes/Reactions.md)
- The reactions to attach to this payload.
+ > The reactions to attach to this payload.

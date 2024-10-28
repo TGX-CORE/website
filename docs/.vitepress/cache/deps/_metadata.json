@@ -1,58 +1,64 @@
 {
-  "hash": "6a2a8d8b",
+  "hash": "f4cc5a55",
   "configHash": "46862767",
-  "lockfileHash": "de819700",
-  "browserHash": "13ced2a2",
+  "lockfileHash": "264cc664",
+  "browserHash": "ecd26db0",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "9e9439a4",
+      "fileHash": "d5748c80",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "172ac535",
+      "fileHash": "db1b6cf8",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "2acf644f",
+      "fileHash": "9c1b95bb",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "b2509c4d",
+      "fileHash": "d726221f",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "4fca649a",
+      "fileHash": "bc15df48",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "b566dd91",
+      "fileHash": "7f3391cf",
       "needsInterop": false
     },
     "@theme/index": {
       "src": "../../../../node_modules/vitepress/dist/client/theme-default/index.js",
       "file": "@theme_index.js",
-      "fileHash": "978137af",
+      "fileHash": "61955cc2",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../../../node_modules/vue-router/dist/vue-router.mjs",
+      "file": "vue-router.js",
+      "fileHash": "c2296248",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-7LUTEMNG": {
-      "file": "chunk-7LUTEMNG.js"
+    "chunk-6E2JFA6K": {
+      "file": "chunk-6E2JFA6K.js"
     },
-    "chunk-PAUCAATC": {
-      "file": "chunk-PAUCAATC.js"
+    "chunk-L2JNJ22P": {
+      "file": "chunk-L2JNJ22P.js"
     }
   }
 }

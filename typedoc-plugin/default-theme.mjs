@@ -1,6 +1,7 @@
 import { MarkdownTheme , MarkdownThemeContext } from 'typedoc-plugin-markdown'
-import { ReflectionKind } from 'typedoc'
 import { join, relative, parse } from 'path'
+import { ReflectionKind } from 'typedoc'
+import { nest, push } from './utilities.mjs'
 
 export class CustomMarkdownTheme extends MarkdownTheme {
     getRenderContext(page) {
@@ -230,17 +231,17 @@ class CustomMarkdownThemeContext extends MarkdownThemeContext {
         property: (model, property) => {
             const property_type = property.type ?? property.getSignature?.type
             return `#### ${property.flags.isStatic ? '$static' : '' }${ property.flags.isReadonly ? '$readonly' : '' }${ property.kind === ReflectionKind.Accessor ? '$get' : '' } ${property.name}${property.flags.isOptional ? '?' : ''}${ property_type ? ` : ${this.partials.type(model, property_type, true)}` : ''}
-            ${this.partials.comment('', property)}`
+            ${property.comment ? `> ${this.partials.comment('', property)}` : ''}
+            ${property.defaultValue||this.partials.displayTag(property, '@default') ? `> default: ${property.defaultValue ?? this.partials.displayTag(property, '@default')}` : ''}`
         },
 
         method: (model, method) => {
             let processed = [ ]
             for(let signature of method.signatures){
                 processed.push(`#### ${signature.type.name === 'Promise' ? '$async' : ''}${ signature.name }( ${this.partials.parametersLine(model, signature.parameters)} )`)
-                processed.push(this.partials.comment('', signature))
                 processed.push(this.partials.parameters(model, signature.parameters))
-                processed.push('\n')
-                processed.push(`Returns: ${this.partials.type(model, signature.type, true)}`)
+                processed.push(`> ${this.partials.comment('', signature)}`)
+                processed.push(`> \n> Returns: ${this.partials.type(model, signature.type, true)}`)
             }
             return processed.join('\n')
         },
@@ -269,6 +270,17 @@ class CustomMarkdownThemeContext extends MarkdownThemeContext {
                 return processed.join('\n')
             } 
             return defaulted
+        },
+
+        displayTag: (model, tag, index) => {
+            let comment = model.comment,
+                block
+
+            if(block = comment?.blockTags?.find((current, i) => current.tag === tag && (index ? i === index : true))){
+                return block.content[0].text
+                                    .replace('\`\`\`ts\n', '\`')
+                                    .replace(`\n\`\`\``, '`')
+            }
         },
 
         display: (model, tag) => {
@@ -362,46 +374,4 @@ class CustomMarkdownThemeContext extends MarkdownThemeContext {
 
     }
 
-}
-
-const nest = (object, additional, fn) => {
-    for(let [key, value] of Object.entries(object)){
-      if(typeof value === 'object' && !Array.isArray(value) && (typeof value === "object" && (/^(object|array)$/i.test(value.constructor.name) === false))){
-        if(additional.top){
-          fn(key, value)
-          continue
-        }
-        object[key] = nest(value, additional, fn)
-      } else {
-        object[key] = fn(key, value) ?? value
-      }
-    }
-    return object
-}
-
-const hasLink = ( str ) => {
-    return /\[([^\]]+)\]\((\.\.\/|\.\/|\/|https?:\/\/|[a-zA-Z0-9-_])[^)\s]*\)/.test(str)
-}
-
-const push = (output, str, string = true ) => {
-    output.push( string ? stringify(str) : str)
-}
-
-const stringify = (str) => {
-    const replacements = {
-        '<': '\\<',
-        '>': '\\>',
-        '(': '\\(',
-        ')': '\\)',
-    }
-
-    return str
-        .trim()                    
-        .replace(/ {2,}/g, ' ')
-        .replace(/`([^`]+)`|\[([^`]+)]\(([^`]+)\)|([^`]+)/g, (match, block, link, linkPath, text) => {
-            if (block) return match
-            if (link) return match
-            if (text) return text.replace(/[<>]/g, (char) => replacements[char] || char)
-            return ''
-        })
 }

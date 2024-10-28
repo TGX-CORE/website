@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guidebook/README
+      link: /guidebook
     - theme: alt
       text: Documentation
-      link: /documentation/README
+      link: /documentation
 
 features:
   - title: Object Oriented

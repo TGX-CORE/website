@@ -11,9 +11,9 @@ prev: false
 export Class
 # MessageReactionCount
 #### extends
- `BaseClass`\<[`MessageReactionCount`](./MessageReactionCount.md), [`MessageReactionCountPacket`](../interfaces/MessageReactionCountPacket.md)\>
+ `BaseClass`<[`MessageReactionCount`](./MessageReactionCount.md), [`MessageReactionCountPacket`](../interfaces/MessageReactionCountPacket.md)>
 #### implements
- `Partial`\<[`MessageReactionCountPacket`](../interfaces/MessageReactionCountPacket.md)\>
+ `Partial`<[`MessageReactionCountPacket`](../interfaces/MessageReactionCountPacket.md)>
 
 ## Constructor
  ```ts

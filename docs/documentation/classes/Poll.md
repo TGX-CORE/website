@@ -11,9 +11,9 @@ prev: false
 export Class
 # Poll
 #### extends
- `BaseClass`\<[`Poll`](./Poll.md), [`PollPacket`](../interfaces/PollPacket.md)\>
+ `BaseClass`<[`Poll`](./Poll.md), [`PollPacket`](../interfaces/PollPacket.md)>
 #### implements
- `Partial`\<[`PollPacket`](../interfaces/PollPacket.md)\>
+ `Partial`<[`PollPacket`](../interfaces/PollPacket.md)>
 
 ## Constructor
  ```ts
@@ -70,9 +70,9 @@ export Class
 ## Methods
 
 #### $asyncstop( reply_markup )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `reply_markup?` | [`InlineKeyboardMarkup`](./InlineKeyboardMarkup.md) | |
-
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>

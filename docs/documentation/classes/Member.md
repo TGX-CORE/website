@@ -11,9 +11,9 @@ prev: false
 export Class
 # Member
 #### extends
- `BaseClass`\<[`Member`](./Member.md), [`ChatMember`](../type-aliases/ChatMember.md)\>
+ `BaseClass`<[`Member`](./Member.md), [`ChatMember`](../type-aliases/ChatMember.md)>
 #### implements
- `Partial`\<[`ChatMemberOwner`](../interfaces/ChatMemberOwner.md)\>,`Partial`\<[`ChatMemberMember`](../interfaces/ChatMemberMember.md)\>,`Partial`\<[`ChatMemberAdministrator`](../interfaces/ChatMemberAdministrator.md)\>,`Partial`\<[`ChatMemberBanned`](../interfaces/ChatMemberBanned.md)\>,`Partial`\<[`ChatMemberLeft`](../interfaces/ChatMemberLeft.md)\>,`Partial`\<[`ChatMemberRestricted`](../interfaces/ChatMemberRestricted.md)\>
+ `Partial`<[`ChatMemberOwner`](../interfaces/ChatMemberOwner.md)>,`Partial`<[`ChatMemberMember`](../interfaces/ChatMemberMember.md)>,`Partial`<[`ChatMemberAdministrator`](../interfaces/ChatMemberAdministrator.md)>,`Partial`<[`ChatMemberBanned`](../interfaces/ChatMemberBanned.md)>,`Partial`<[`ChatMemberLeft`](../interfaces/ChatMemberLeft.md)>,`Partial`<[`ChatMemberRestricted`](../interfaces/ChatMemberRestricted.md)>
 
 ## Constructor
  ```ts
@@ -102,45 +102,49 @@ export Class
 ## Methods
 
 #### $asyncban( revoke_messages, until_date )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `revoke_messages?` | `boolean` | |
 | `until_date?` | `number` | |
-
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncboosts( )
 
-Returns: `Promise`\<`boolean` \| [`ChatBoost[]`](./ChatBoost.md)\>
+> 
+> 
+> Returns: `Promise`<`boolean` \| [`ChatBoost[]`](./ChatBoost.md)>
 
 #### $asyncfetch( )
 
-Returns: `Promise`\<[`Member`](./Member.md)\>
+> 
+> 
+> Returns: `Promise`<[`Member`](./Member.md)>
 
 #### $asyncpromote( is_anonymous, permissions )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `is_anonymous` | `boolean` | |
 | `permissions` | [`AdminPermissions`](../interfaces/AdminPermissions.md) | |
-
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncrestrict( permissions, use_independent_chat_permissions, until_date )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `permissions` | [`ChatPermissions`](./ChatPermissions.md) | |
 | `use_independent_chat_permissions?` | `boolean` | |
 | `until_date?` | `number` | |
-
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncunban( only_if_banned )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `only_if_banned` | `boolean` | |
-
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>

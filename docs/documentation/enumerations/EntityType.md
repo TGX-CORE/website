@@ -32,5 +32,5 @@ export Enum
 | Strikethrough | `"strikethrough"` | ~~strikethrough text~~ |
 | TextLink | `"text_link"` | clickable text URLs |
 | TextMention | `"text_mention"` | users without usernames |
-| Underline | `"underline"` | \<u\>underlined text\</u\> |
+| Underline | `"underline"` | <u>underlined text</u> |
 | Url | `"url"` | https://telegram.org |

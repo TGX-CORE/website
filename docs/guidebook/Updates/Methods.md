@@ -22,7 +22,7 @@ new Client({
         endpoint: '/webhook', // This is the default value.
 
         url: 'https://host-website.com/path', // https://host-website.com/path/endpoint
-        endpoint: '/endpoint',.
+        endpoint: '/endpoint',
 
         port: 8080
     },

@@ -11,7 +11,7 @@ prev: false
 export Class
 # PreCheckoutQuery
 #### extends
- `BaseClass`\<[`PreCheckoutQuery`](./PreCheckoutQuery.md), [`PreCheckoutQueryPacket`](../interfaces/PreCheckoutQueryPacket.md)\>
+ `BaseClass`<[`PreCheckoutQuery`](./PreCheckoutQuery.md), [`PreCheckoutQueryPacket`](../interfaces/PreCheckoutQueryPacket.md)>
 #### implements
  [`PreCheckoutQueryPacket`](../interfaces/PreCheckoutQueryPacket.md)
 
@@ -48,13 +48,15 @@ export Class
 ## Methods
 
 #### $asyncnotOk( error_message )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `error_message` | `string` | |
-
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncok( )
 
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>

@@ -11,7 +11,7 @@ prev: false
 export Class
 # PollManager
 #### extends
- `BaseManager`\<[`PollManagerOptions`](../interfaces/PollManagerOptions.md)\>
+ `BaseManager`<[`PollManagerOptions`](../interfaces/PollManagerOptions.md)>
 
 ## Constructor
  ```ts
@@ -25,6 +25,8 @@ export Class
 ## Properties
 
 #### active : `boolean`
+ 
+ > default: false
 
 #### $readonly client : [`Client`](./Client.md)
 
@@ -39,18 +41,21 @@ export Class
 ## Methods
 
 #### handle( update )
-Handles an incoming update packet from Telegram.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `update` | [`UpdatePacket`](../interfaces/UpdatePacket.md) \| [`UpdatePacket[]`](../interfaces/UpdatePacket.md) | The packet response from Telegram. |
-
-Returns: `void`
+> Handles an incoming update packet from Telegram.
+> 
+> Returns: `void`
 
 #### $asyncinitialize( )
 
-Returns: `Promise`\<`void`\>
+> 
+> 
+> Returns: `Promise`<`void`>
 
 #### switch( )
-Enable or disable the poll manager.
 
-Returns: `void`
+> Enable or disable the poll manager.
+> 
+> Returns: `void`

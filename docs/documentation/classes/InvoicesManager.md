@@ -11,7 +11,7 @@ prev: false
 export Class
 # InvoicesManager
 #### extends
- `CachedManager`\<`string`, [`Invoice`](./Invoice.md)\>
+ `CachedManager`<`string`, [`Invoice`](./Invoice.md)>
 
 ## Constructor
  ```ts
@@ -24,7 +24,7 @@ export Class
 
 ## Properties
 
-#### $get cache : `Collection`\<`CachedManager.K`, `CachedManager.V`\>
+#### $get cache : `Collection`<`CachedManager.K`, `CachedManager.V`>
 
 #### $readonly client : [`Client`](./Client.md)
 
@@ -33,59 +33,59 @@ export Class
 #### $readonly options : `any`
 
 #### provider_token? : `string`
- The token provided by your payment provider for payments.
+ > The token provided by your payment provider for payments.
 
 ## Methods
 
 #### _add( data, cache, param2 )
-Add data with cache check to the current manager.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `data` | `any` | The data to add to the cache manager. |
 | `cache` = `true` | `boolean` | Pass *True* to cache the data. |
 | `param2` = `{}` | `any` | Additional data to pass. |
-
-Returns: `any`
+> Add data with cache check to the current manager.
+> 
+> Returns: `any`
 
 #### create( id, invoice )
-Creates an invoice and store it in the manger.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `string` | The id of the invoices to store as. |
 | `invoice` | [`Invoice`](./Invoice.md) | The payload of the invoice. |
-
-Returns: `any`
+> Creates an invoice and store it in the manger.
+> 
+> Returns: `any`
 
 #### $asynccreateLink( id, payload )
-Creates an invoice link and store it in the manager.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `string` | The id of the invoices to store as. |
 | `payload` | [`CreateInvoiceLinkPayload`](../interfaces/CreateInvoiceLinkPayload.md) | The payload of the invoice link. |
-
-Returns: `Promise`\<`string` \| `boolean`\>
+> Creates an invoice link and store it in the manager.
+> 
+> Returns: `Promise`<`string` \| `boolean`>
 
 #### generate( id )
-Returns an invoice link or an invoice with complete details such as payment_provider, but excluding chat ids.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `string` | The id of the invoice. |
-
-Returns: `String` \| `Boolean` \| `Partial`\<[`SendInvoicePayload`](../interfaces/SendInvoicePayload.md)\>
+> Returns the invoice link or invoice.
+> 
+> Returns: `String` \| `Boolean` \| `Partial`<[`Invoice`](./Invoice.md)>
 
 #### $asyncsend( id, chat_id )
-This will only work with invoices and not link invoices!
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `string` | The id of the invoice. |
 | `chat_id` | `number` | The target chat to send the invoice to. |
-
-Returns: `Promise`\<`void` \| [`Message`](./Message.md)\>
+> This will only work with invoices and not link invoices!
+> 
+> Returns: `Promise`<`void` \| [`Message`](./Message.md)>
 
 #### setToken( token )
-Sets the token for the invoices generated.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `token` | `string` | The token provided by your payment provider for payments. |
-
-Returns: `void`
+> Sets the token for the invoices generated.
+> 
+> Returns: `void`

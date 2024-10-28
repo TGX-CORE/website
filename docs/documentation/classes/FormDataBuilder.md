@@ -25,11 +25,11 @@ export Class
 ## Methods
 
 #### append( name, path, options )
-Append a file to the form.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `name` | `string` | The name the file will be attached as. |
 | `path` | `string` \| `"fs".ReadStream` | Absolute path to the file or a readstream. |
 | `options?` | `string` \| `FormData.AppendOptions` | Additional options or the name of the file. |
-
-Returns: [`FormDataBuilder`](./FormDataBuilder.md)
+> Append a file to the form.
+> 
+> Returns: [`FormDataBuilder`](./FormDataBuilder.md)

@@ -25,10 +25,10 @@ export Class
 ## Methods
 
 #### add( label, amount )
-Adds a portion of a price to the list.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `label` | `string` | The label of the portion. |
 | `amount` | `number` | The amount of the portion, see LabeledPrice for more info. |
-
-Returns: [`LabeledPrices`](./LabeledPrices.md)
+> Adds a portion of a price to the list.
+> 
+> Returns: [`LabeledPrices`](./LabeledPrices.md)

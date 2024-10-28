@@ -16,21 +16,21 @@ Represents a special entity in a text message. For example, hashtags, usernames,
 ## Properties
 
 #### custom_emoji_id? : `string`
- For “custom_emoji” only, unique identifier of the custom emoji. Use getCustomEmojiStickers to get full information about the sticker
+ > For “custom_emoji” only, unique identifier of the custom emoji. Use getCustomEmojiStickers to get full information about the sticker
 
 #### language? : `string`
- For “pre” only, the programming language of the entity text
+ > For “pre” only, the programming language of the entity text
 
 #### length : `number`
- Length of the entity in UTF-16 code units
+ > Length of the entity in UTF-16 code units
 
 #### offset : `number`
 
 #### type : `string`
- The type of the entity.
+ > The type of the entity.
 
 #### url? : `string`
- For “text_link” only, URL that will be opened after user taps on the text
+ > For “text_link” only, URL that will be opened after user taps on the text
 
 #### user? : [`UserPacket`](./UserPacket.md)
- For “text_mention” only, the mentioned user
+ > For “text_mention” only, the mentioned user

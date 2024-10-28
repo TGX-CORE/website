@@ -11,7 +11,7 @@ prev: false
 export Interface
 # VoiceFilePacket
 #### extends
- [`FilePacket`](./FilePacket.md),`Omit`\<[`MediaFilePacket`](./MediaFilePacket.md), `"file_name"`\>
+ [`FilePacket`](./FilePacket.md),`Omit`<[`MediaFilePacket`](./MediaFilePacket.md), `"file_name"`>
 
 ## Properties
 

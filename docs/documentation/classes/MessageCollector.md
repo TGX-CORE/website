@@ -11,7 +11,7 @@ prev: false
 export Class
 # MessageCollector
 #### extends
- [`Collector`](./Collector.md)\<[`MessageCollectorOptions`](../interfaces/MessageCollectorOptions.md), `number`, [`Message`](./Message.md)\>
+ [`Collector`](./Collector.md)<[`MessageCollectorOptions`](../interfaces/MessageCollectorOptions.md), `number`, [`Message`](./Message.md)>
 
 ## Constructor
  ```ts
@@ -27,13 +27,13 @@ export Class
 
 #### $get endReason : `undefined` \| `string`
 
-#### $get next : `Promise`\<[`Message`](./Message.md)\>
+#### $get next : `Promise`<[`Message`](./Message.md)>
 
 #### chat : [`Chat`](../type-aliases/Chat.md)
 
 #### $readonly client : [`Client`](./Client.md)
 
-#### collection : `Collection`\<`number`, `any`\>
+#### collection : `Collection`<`number`, `any`>
 
 #### ended : `boolean`
 
@@ -47,48 +47,52 @@ export Class
 
 #### [asyncIterator]( )
 
-Returns: `AsyncGenerator`\<`unknown`, `void`, `unknown`\>
+> 
+> 
+> Returns: `AsyncGenerator`<`unknown`, `void`, `unknown`>
 
 #### checkEnd( )
 
-Returns: `boolean`
+> 
+> 
+> Returns: `boolean`
 
 #### collect( message )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `message` | [`Message`](./Message.md) | |
-
-Returns: `null` \| `number`
+> 
+> 
+> Returns: `null` \| `number`
 
 #### dispose( message )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `message` | [`Message`](./Message.md) | |
-
-Returns: `null` \| `number`
+> 
+> 
+> Returns: `null` \| `number`
 
 #### $asynchandleCollect( collect )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `collect` | [`Message`](./Message.md) | |
-
-Returns: `Promise`\<`void`\>
+> 
+> 
+> Returns: `Promise`<`void`>
 
 #### $asynchandleDispose( dispose )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `dispose` | [`Message`](./Message.md) | |
-
-Returns: `Promise`\<`void`\>
+> 
+> 
+> Returns: `Promise`<`void`>
 
 #### stop( reason )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `reason` = `'user'` | `string` | |
-
-Returns: `void`
+> 
+> 
+> Returns: `void`

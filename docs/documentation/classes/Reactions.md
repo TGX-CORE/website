@@ -27,9 +27,9 @@ Represents an array of reactions.
 ## Methods
 
 #### add( emoji )
-Adds an emoji to the current payload.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `emoji` | [`Emojis`](../type-aliases/Emojis.md) | The emoji to add to the current payload. |
-
-Returns: [`Reactions`](./Reactions.md)
+> Adds an emoji to the current payload.
+> 
+> Returns: [`Reactions`](./Reactions.md)

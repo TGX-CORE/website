@@ -15,7 +15,7 @@ export Interface
 
 #### emitter? : `any`
 
-#### event? : `string`
+#### event : [`ClientEvent`](../enumerations/ClientEvent.md)
 
 #### name : [`ClientEvent`](../enumerations/ClientEvent.md)
 

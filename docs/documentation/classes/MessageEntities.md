@@ -25,9 +25,9 @@ export Class
 ## Methods
 
 #### add( ...entity )
-Add entities to the current builder.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...entity` | [`MessageEntitiesType[]`](../type-aliases/MessageEntitiesType.md) | The entities to add to the message. |
-
-Returns: [`MessageEntities`](./MessageEntities.md)
+> Add entities to the current builder.
+> 
+> Returns: [`MessageEntities`](./MessageEntities.md)

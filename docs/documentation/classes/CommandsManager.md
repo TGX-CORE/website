@@ -35,27 +35,45 @@ export Class
 ## Methods
 
 #### $asyncdelete( scope, language_code )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `scope?` | [`CommandScopeType`](../enumerations/CommandScopeType.md) | |
-| `language_code?` | `string` | |
-
-Returns: `Promise`\<`boolean`\>
+| `scope?` | [`CommandScope`](../interfaces/CommandScope.md) | The scope of the command. |
+| `language_code?` | `string` | The language code of the command. |
+> Delete the commands that are relevant w/o scope and language code.
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncget( scope, language_code )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `scope?` | [`CommandScopeType`](../enumerations/CommandScopeType.md) | |
-| `language_code?` | `string` | |
+| `scope?` | [`CommandScope`](../interfaces/CommandScope.md) | The scope of the command. |
+| `language_code?` | `string` | The language code of the command. |
+> Get the commands that are relevant w/o scope and language code.
+> 
+> Returns: `Promise`<`boolean` \| [`BotCommand[]`](../interfaces/BotCommand.md)>
 
-Returns: `Promise`\<`boolean` \| [`BotCommand[]`](../interfaces/BotCommand.md)\>
+#### $asyncregister( commands, language_code, scope, chat_id, user_id )
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `commands` | `string[]` | An array of the commands command as an id, they must be registered to the registry. |
+| `language_code` | `string` | The language code scope of the current commands. |
+| `scope` | [`CommandScopeType`](../enumerations/CommandScopeType.md) | The scope of the current commands. |
+| `chat_id?` | `string` \| `number` | The attached chat_id of the scope. |
+| `user_id?` | `string` | The attached user_id of the scope. |
+> Register the commands.
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncset( payload )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `payload` | [`CommandsPayload`](../interfaces/CommandsPayload.md) | |
+| `payload` | [`CommandsPayload`](../interfaces/CommandsPayload.md) | The payload to update the commands. |
+> Set the commands.
+> 
+> Returns: `Promise`<`boolean`>
 
-Returns: `Promise`\<`boolean`\>
+#### $asyncupdate( )
+
+> Updates all of the commands but filters ignored from the commands registry.
+> 
+> Returns: `Promise`<`boolean`>

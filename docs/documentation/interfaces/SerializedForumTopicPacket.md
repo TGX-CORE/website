@@ -11,7 +11,7 @@ prev: false
 export Interface
 # SerializedForumTopicPacket
 #### extends
- `Partial`\<[`ForumTopicPacket`](./ForumTopicPacket.md)\>
+ `Partial`<[`ForumTopicPacket`](./ForumTopicPacket.md)>
 
 ## Properties
 

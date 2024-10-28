@@ -11,7 +11,7 @@ prev: false
 export Class
 # PollAnswer
 #### extends
- `BaseClass`\<[`PollAnswer`](./PollAnswer.md), [`PollAnswerPacket`](../interfaces/PollAnswerPacket.md)\>
+ `BaseClass`<[`PollAnswer`](./PollAnswer.md), [`PollAnswerPacket`](../interfaces/PollAnswerPacket.md)>
 #### implements
  [`PollAnswerPacket`](../interfaces/PollAnswerPacket.md)
 

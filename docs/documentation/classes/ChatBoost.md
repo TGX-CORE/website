@@ -11,9 +11,9 @@ prev: false
 export Class
 # ChatBoost
 #### extends
- `BaseClass`\<[`ChatBoost`](./ChatBoost.md), [`ChatBoostUpdated`](../interfaces/ChatBoostUpdated.md) \| [`ChatBoostRemoved`](../interfaces/ChatBoostRemoved.md)\>
+ `BaseClass`<[`ChatBoost`](./ChatBoost.md), [`ChatBoostUpdated`](../interfaces/ChatBoostUpdated.md) \| [`ChatBoostRemoved`](../interfaces/ChatBoostRemoved.md)>
 #### implements
- `Partial`\<[`ChatBoostUpdated`](../interfaces/ChatBoostUpdated.md)\>,`Partial`\<[`ChatBoostRemoved`](../interfaces/ChatBoostRemoved.md)\>
+ `Partial`<[`ChatBoostUpdated`](../interfaces/ChatBoostUpdated.md)>,`Partial`<[`ChatBoostRemoved`](../interfaces/ChatBoostRemoved.md)>
 
 ## Constructor
  ```ts

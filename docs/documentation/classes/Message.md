@@ -11,9 +11,9 @@ prev: false
 export Class
 # Message
 #### extends
- `BaseClass`\<[`Message`](./Message.md), [`MessagePacket`](../interfaces/MessagePacket.md)\>
+ `BaseClass`<[`Message`](./Message.md), [`MessagePacket`](../interfaces/MessagePacket.md)>
 #### implements
- `Omit`\<[`MessagePacket`](../interfaces/MessagePacket.md), `"entities"` \| `"caption_entities"`\>
+ `Omit`<[`MessagePacket`](../interfaces/MessagePacket.md), `"entities"` \| `"caption_entities"`>
 
 ## Constructor
  ```ts
@@ -33,7 +33,11 @@ export Class
 
 #### $get entities : [`MessageEntitiesStore`](./MessageEntitiesStore.md)
 
+#### $get from : [`Chat`](../type-aliases/Chat.md) \| [`User`](./User.md)
+
 #### $get id : `number`
+
+#### $get language_code : `undefined` \| `string`
 
 #### $get manager : [`MessagesManager`](./MessagesManager.md)
 
@@ -96,8 +100,6 @@ export Class
 #### forum_topic_reopened? : [`ForumTopicReopened`](../interfaces/ForumTopicReopened.md)
 
 #### forward_origin? : [`MessageOrigin`](../type-aliases/MessageOrigin.md)
-
-#### from? : [`UserPacket`](../interfaces/UserPacket.md)
 
 #### game? : [`GamePacket`](../interfaces/GamePacket.md)
 
@@ -218,116 +220,117 @@ export Class
 ## Methods
 
 #### $asynccopy( chat_id, payload )
-Copies the message to a chat.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `chat_id` | `string` \| `number` | The chat to copy the message to. |
 | `payload` | [`CopyMessagePayload`](../interfaces/CopyMessagePayload.md) | Additional data for copying. |
-
-Returns: `Promise`\<`boolean`\>
+> Copies the message to a chat.
+> 
+> Returns: `Promise`<`boolean`>
 
 #### createCallbackCollector( options )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `options` | [`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md) | |
-
-Returns: [`CallbackCollector`](./CallbackCollector.md)
+> 
+> 
+> Returns: [`CallbackCollector`](./CallbackCollector.md)
 
 #### $asyncdelete( )
-Deletes the message.
 
-Returns: `Promise`\<`boolean`\>
+> Deletes the message.
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncedit( payload )
-Edits the message.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`MessageEditPayload`](../interfaces/MessageEditPayload.md) | The content of what the message will contain. |
-
-Returns: `Promise`\<`boolean` \| [`Message`](./Message.md)\>
+> Edits the message.
+> 
+> Returns: `Promise`<`boolean` \| [`Message`](./Message.md)>
 
 #### $asynceditCaption( payload )
-Edits the caption of the message.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`MessagecaptionEditPayload`](../interfaces/MessagecaptionEditPayload.md) | The content of what the caption will contain. |
-
-Returns: `Promise`\<`boolean` \| [`Message`](./Message.md)\>
+> Edits the caption of the message.
+> 
+> Returns: `Promise`<`boolean` \| [`Message`](./Message.md)>
 
 #### $asynceditMedia( payload )
-Edits the media of the message.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`MessageMediaEditPayload`](../interfaces/MessageMediaEditPayload.md) | The content of what the media will contain. |
-
-Returns: `Promise`\<`boolean` \| [`Message`](./Message.md)\>
+> Edits the media of the message.
+> 
+> Returns: `Promise`<`boolean` \| [`Message`](./Message.md)>
 
 #### $asynceditReplyMarkup( payload )
-Edits only the reply markup of the message.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`MessageReplyMarkupEditPayload`](../interfaces/MessageReplyMarkupEditPayload.md) | The content of what the reply markup will contain. |
-
-Returns: `Promise`\<`boolean` \| [`Message`](./Message.md)\>
+> Edits only the reply markup of the message.
+> 
+> Returns: `Promise`<`boolean` \| [`Message`](./Message.md)>
 
 #### $asyncforward( chat_id, payload )
-Forwards the message to a chat.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `chat_id` | `string` \| `number` | The chat to forward the message to. |
 | `payload` | [`ForwardPayload`](../interfaces/ForwardPayload.md) | Additional data for forwarding. |
-
-Returns: `Promise`\<`boolean`\>
+> Forwards the message to a chat.
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncpin( disable_notification, business_connection_id )
-Pins the message.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `disable_notification?` | `boolean` | |
 | `business_connection_id?` | `string` | |
-
-Returns: `Promise`\<`boolean`\>
+> Pins the message.
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncreply( pointer, payload, form_data )
-Replies a message to the current message.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `pointer` | [`MessagePayloadMethod`](../enumerations/MessagePayloadMethod.md) | The type or method of the message. |
-| `payload` | `Partial`\<[`MessagePayload`](../type-aliases/MessagePayload.md)\> | What the message will contain. |
+| `payload` | `Partial`<[`MessagePayload`](../type-aliases/MessagePayload.md)> | What the message will contain. |
 | `form_data?` | [`FormDataBuilder`](./FormDataBuilder.md) | FormData for uploading a media with the message. |
-
-Returns: `Promise`\<`boolean` \| [`Message`](./Message.md)\>
+> Replies a message to the current message.
+> 
+> Returns: `Promise`<`boolean` \| [`Message`](./Message.md)>
 
 #### $asyncreplyInvoice( id )
-Replies an invoice message to the currenct message. Uses auxiliaries.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `string` | The id of the invoice. |
-
-Returns: `Promise`\<`boolean` \| [`Message`](./Message.md)\>
+> Replies an invoice message that must be an invoice and not a link to the currenct message.
+> 
+> Returns: `Promise`<`boolean` \| [`Message`](./Message.md)>
 
 #### $asyncreplyText( text )
-Replies a text message to the current message.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `text` | `string` | What the text will contain. |
-
-Returns: `Promise`\<`boolean` \| [`Message`](./Message.md)\>
+> Replies a text message to the current message.
+> 
+> Returns: `Promise`<`boolean` \| [`Message`](./Message.md)>
 
 #### $asyncsetReaction( reaction, is_big )
-Sets the reaction of the message.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `reaction` | [`Reactions`](./Reactions.md) | The reactions. |
 | `is_big?` | `boolean` | Pass *True* to set the reaction with a big animation |
-
-Returns: `Promise`\<`boolean`\>
+> Sets the reaction of the message.
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncunpin( business_connection_id )
-Unpins the message.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `business_connection_id` | `string` | |
-
-Returns: `Promise`\<`boolean`\>
+> Unpins the message.
+> 
+> Returns: `Promise`<`boolean`>

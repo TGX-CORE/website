@@ -11,7 +11,7 @@ prev: false
 export abstract Class
 # Event
 #### extends
- `Piece`\<[`EventMeta`](../interfaces/EventMeta.md)\>
+ `Piece`<[`EventMeta`](../interfaces/EventMeta.md)>
 
 An event piece.
 
@@ -44,19 +44,21 @@ An event piece.
 ## Methods
 
 #### listen( )
-Activates or resumes the listener, this is activated on load.
 
-Returns: `void`
+> Activates or resumes the listener, this is activated on load.
+> 
+> Returns: `void`
 
 #### run( ...args )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...args` | `unknown[]` | |
-
-Returns: `unknown`
+> 
+> 
+> Returns: `unknown`
 
 #### stop( )
-Stops the listener.
 
-Returns: `void`
+> Stops the listener.
+> 
+> Returns: `void`

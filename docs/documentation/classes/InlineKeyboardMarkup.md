@@ -27,9 +27,9 @@ This object represents an inline keyboard that appears right next to the message
 ## Methods
 
 #### addrow( ...inline_buttons )
-Adds a new row to the current markup.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...inline_buttons` | [`InlineKeyboardButton[]`](../type-aliases/InlineKeyboardButton.md) | The keyboard buttons to display in this row. |
-
-Returns: [`InlineKeyboardMarkup`](./InlineKeyboardMarkup.md)
+> Adds a new row to the current markup.
+> 
+> Returns: [`InlineKeyboardMarkup`](./InlineKeyboardMarkup.md)

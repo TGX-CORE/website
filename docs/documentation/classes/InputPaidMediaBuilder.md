@@ -25,9 +25,9 @@ export Class
 ## Methods
 
 #### add( ...medias )
-Adds medias to the current builder.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...medias` | [`InputPaidMedia[]`](../type-aliases/InputPaidMedia.md) | The medias to add. |
-
-Returns: [`InputPaidMediaBuilder`](./InputPaidMediaBuilder.md)
+> Adds medias to the current builder.
+> 
+> Returns: [`InputPaidMediaBuilder`](./InputPaidMediaBuilder.md)

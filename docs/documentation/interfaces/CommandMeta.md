@@ -17,15 +17,15 @@ export Interface
 
 #### chat_ids? : `number[]`
 
-#### command : `string`
+#### command? : `string`
 
-#### description : `string`
+#### description? : `string`
 
 #### emitter? : `any`
 
 #### ignore? : `boolean`
 
-#### language_code? : `string`
+#### language_code? : `string` \| `Object`
 
 #### name : `string`
 

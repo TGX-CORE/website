@@ -16,132 +16,132 @@ All the possible events the client may emit.
 ## Properties
 
 #### Animation : `"animation"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Audio : `"audio"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### BoostAdded : `"boost_added"`
 
 #### BusinessConnection : `"business_connection"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### BusinessMessage : `"business_message"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### CallbackQuery : `"callback_query"`
 
 #### ChannelChatCreated : `"channel_chat_created"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### ChannelPost : `"channel_post"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### ChatBackgroundSet : `"chat_background_set"`
 
 #### ChatBoost : `"chat_boost"`
- (chat_boost: 
+ > (chat_boost: 
 [ChatBoost](../classes/ChatBoost.md)
 )
 
 #### ChatJoinRequest : `"chat_join_request"`
- (request: 
+ > (request: 
 [ChatJoinRequest](../classes/ChatJoinRequest.md)
 )
 
 #### ChatMemberUpdated : `"chat_member"`
- (update: 
+ > (update: 
 [ChatMemberUpdated](../classes/ChatMemberUpdated.md)
 )
 
 #### ChatShared : `"chat_shared"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### ChosenInlineResult : `"chosen_inline_result"`
- (chosen_result: 
+ > (chosen_result: 
 [ChosenInlineResult](../classes/ChosenInlineResult.md)
 )
 
 #### Command : `"command"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### ConnectedWebsite : `"connected_website"`
 
 #### Contact : `"contact"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### DeleteChatPhoto : `"delete_chat_photo"`
 
 #### DeletedBusinessMessage : `"deleted_business_messages"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Dice : `"dice"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Document : `"document"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### EditedBusinessMessage : `"edited_business_message"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### EditedChannelPost : `"edited_channel_post"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### EditedMessage : `"edited_message"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### ForumTopicClosed : `"forum_topic_closed"`
- (topic: 
+ > (topic: 
 [ForumTopic](../classes/ForumTopic.md)
 )
 
 #### ForumTopicCreated : `"forum_topic_created"`
- (topic: 
+ > (topic: 
 [ForumTopic](../classes/ForumTopic.md)
 )
 
 #### ForumTopicEdited : `"forum_topic_edited"`
- (topic: 
+ > (topic: 
 [ForumTopic](../classes/ForumTopic.md)
 )
 
 #### ForumTopicReopened : `"forum_topic_reopened"`
- (topic: 
+ > (topic: 
 [ForumTopic](../classes/ForumTopic.md)
 )
 
 #### Game : `"game"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
@@ -158,12 +158,12 @@ All the possible events the client may emit.
 #### GiveawayWinners : `"giveaway_winners"`
 
 #### GroupChatCreated : `"group_chat_created"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### InlineQuery : `"inline_query"`
- (inline_query: 
+ > (inline_query: 
 [InlineQuery](../classes/InlineQuery.md)
 )
 
@@ -172,19 +172,19 @@ All the possible events the client may emit.
 #### LeftChatMember : `"left_chat_member"`
 
 #### Location : `"location"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Message : `"message"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### MessageAutoDeleteTimerChanged : `"message_auto_delete_timer_changed"`
 
 #### MessageReaction : `"message_reaction"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 , old_reactions: 
 [MessageReaction](../classes/MessageReaction.md)
@@ -193,7 +193,7 @@ All the possible events the client may emit.
 [])
 
 #### MessageReactionCount : `"message_reaction_count"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 , decreased: Object, increased: Object)
 
@@ -204,7 +204,7 @@ All the possible events the client may emit.
 #### MyChatMemberUpdated : `"my_chat_member"`
 
 #### NewChatMembers : `"new_chat_members"`
- (member: 
+ > (member: 
 [Member](../classes/Member.md)
 )
 
@@ -213,34 +213,34 @@ All the possible events the client may emit.
 #### NewChatTitle : `"new_chat_title"`
 
 #### PaidMedia : `"paid_media"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### PassportData : `"passport_data"`
 
 #### Photo : `"photo"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### PinnedMessage : `"pinned_message"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Poll : `"poll"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### PollAnswer : `"poll_answer"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### PreCheckoutQuery : `"pre_checkout_query"`
- (query: 
+ > (query: 
 [PreCheckoutQuery](../classes/PreCheckoutQuery.md)
 )
 
@@ -249,15 +249,15 @@ All the possible events the client may emit.
 #### PurchasedPaidMedia : `"purchased_paid_media"`
 
 #### QuoteText : `"quote"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Raw : `"raw"`
- (object: Object)
+ > (object: Object)
 
 #### Ready : `"ready"`
- (client: 
+ > (client: 
 [Client](../classes/Client.md)
 )
 
@@ -266,47 +266,47 @@ All the possible events the client may emit.
 #### RemovedChatBoost : `"removed_chat_boost"`
 
 #### ShippingQuery : `"shipping_query"`
- (shipping: 
+ > (shipping: 
 [ShippingQuery](../classes/ShippingQuery.md)
 )
 
 #### Story : `"story"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### SuccessfulPayment : `"successful_payment"`
- (message: 
+ > (message: 
 [SuccessfulPayment](../classes/SuccessfulPayment.md)
 )
 
 #### SupergroupChatCreated : `"supergroup_chat_created"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Text : `"text"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Unhandled : `"unhandled"`
- (packet: 
+ > (packet: 
 [UpdatePacket](../interfaces/UpdatePacket.md)
 )
 
 #### UsersShared : `"users_shared"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Venue : `"venue"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Video : `"video"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
@@ -319,12 +319,12 @@ All the possible events the client may emit.
 #### VideoChatStarted : `"video_chat_started"`
 
 #### VideoNote : `"video_note"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 
 #### Voice : `"voice"`
- (message: 
+ > (message: 
 [Message](../classes/Message.md)
 )
 

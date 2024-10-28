@@ -14,7 +14,7 @@ interface SidebarItem {
   items?: SidebarItem[]
 }
 
-function generateSidebarItems(basePath: string, urlPrefix: string): SidebarItem[] {
+function generateSidebarItems(basePath: string, urlPrefix: string, collapsed?: boolean): SidebarItem[] {
   const items: SidebarItem[] = []
   const directories = new Set<string>()
   const fileMap = new Map<string, SidebarItem[]>()
@@ -69,7 +69,7 @@ function generateSidebarItems(basePath: string, urlPrefix: string): SidebarItem[
       const dirName = path.basename(subdir)
       items.push({
         text: dirName,
-        collapsed: true,
+        collapsed,
         items: buildSidebar(path.resolve(dir, dirName))
       })
     })
@@ -144,9 +144,28 @@ export default defineConfig({
       // }
     },
 
+    footer: {
+      message: 'A modern, powerful library for building your Telegram bots, with seamless support for both JavaScript and Typescript.'
+    },
+
     nav: [
-      { text: 'Documentation', link: '/documentation/README' },
-      { text: 'Guidebook', link: '/guidebook/README'}
+      { text: 'Documentation', link: '/documentation/' },
+      { text: 'Guidebook', link: '/guidebook/'},
+      // {
+      //   text: 'TGX-CORE', items: [
+          
+      //   ]
+      // },
+      // {
+      //   text: 'Telegram', items: [
+      //     { text: 'TGX-CORE Developers', link: 'https://t.me/+reMnoPhHePAwODA1' },
+      //     { text: 'TGX-CORE Devs', link: 'https://t.me/tgxcore' }
+      //   ]
+      // },
+      { text: 'Github', items: [
+        { text: 'Releases', link: 'https://github.com/TGX-CORE/tgx-core/releases' },
+        { text: 'Issues', link: 'https://github.com/TGX-CORE/tgx-core/issues' }
+      ]}
     ],
 
     sidebar: {
@@ -155,7 +174,8 @@ export default defineConfig({
           text: 'Documentation',
           items: generateSidebarItems(
             path.resolve(__dirname, '../documentation'), 
-            '/documentation'
+            '/documentation',
+            true
           )
         }
       ],
@@ -169,11 +189,13 @@ export default defineConfig({
           )
         }
       ],
+
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/TGX-CORE/tgx-core' }
+      { icon: 'github', link: 'https://github.com/TGX-CORE/tgx-core' },
+      { icon: 'npm', link: 'https://www.npmjs.com/package/tgx-core' }
     ]
     
-  }
+  },
 })

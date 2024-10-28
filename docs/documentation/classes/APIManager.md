@@ -11,7 +11,7 @@ prev: false
 export Class
 # APIManager
 #### extends
- `BaseManager`\<[`APIManagerOptions`](../interfaces/APIManagerOptions.md)\>
+ `BaseManager`<[`APIManagerOptions`](../interfaces/APIManagerOptions.md)>
 
 ## Constructor
  ```ts
@@ -35,19 +35,19 @@ export Class
 ## Methods
 
 #### $asyncrequest( URL, method, ...argumants )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `URL` | `string` | |
 | `method` | [`AxiosMethod`](../type-aliases/AxiosMethod.md) | |
 | `...argumants` | `any[]` | |
-
-Returns: `Promise`\<`any`\>
+> 
+> 
+> Returns: `Promise`<`any`>
 
 #### setToken( token )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `token` | `string` | |
-
-Returns: `void`
+> 
+> 
+> Returns: `void`

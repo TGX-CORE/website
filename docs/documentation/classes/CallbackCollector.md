@@ -11,7 +11,7 @@ prev: false
 export Class
 # CallbackCollector
 #### extends
- [`Collector`](./Collector.md)\<[`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md), `string`, [`CallbackQuery`](./CallbackQuery.md)\>
+ [`Collector`](./Collector.md)<[`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md), `string`, [`CallbackQuery`](./CallbackQuery.md)>
 
 ## Constructor
  ```ts
@@ -27,11 +27,11 @@ export Class
 
 #### $get endReason : `undefined` \| `string`
 
-#### $get next : `Promise`\<[`Message`](./Message.md)\>
+#### $get next : `Promise`<[`Message`](./Message.md)>
 
 #### $readonly client : [`Client`](./Client.md)
 
-#### collection : `Collection`\<`string`, `any`\>
+#### collection : `Collection`<`string`, `any`>
 
 #### ended : `boolean`
 
@@ -47,48 +47,52 @@ export Class
 
 #### [asyncIterator]( )
 
-Returns: `AsyncGenerator`\<`unknown`, `void`, `unknown`\>
+> 
+> 
+> Returns: `AsyncGenerator`<`unknown`, `void`, `unknown`>
 
 #### checkEnd( )
 
-Returns: `boolean`
+> 
+> 
+> Returns: `boolean`
 
 #### collect( query )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `query` | [`CallbackQuery`](./CallbackQuery.md) | |
-
-Returns: `null` \| `string`
+> 
+> 
+> Returns: `null` \| `string`
 
 #### dispose( query )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `query` | [`CallbackQuery`](./CallbackQuery.md) | |
-
-Returns: `null` \| `string`
+> 
+> 
+> Returns: `null` \| `string`
 
 #### $asynchandleCollect( collect )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `collect` | [`CallbackQuery`](./CallbackQuery.md) | |
-
-Returns: `Promise`\<`void`\>
+> 
+> 
+> Returns: `Promise`<`void`>
 
 #### $asynchandleDispose( dispose )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `dispose` | [`CallbackQuery`](./CallbackQuery.md) | |
-
-Returns: `Promise`\<`void`\>
+> 
+> 
+> Returns: `Promise`<`void`>
 
 #### stop( reason )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `reason` = `'user'` | `string` | |
-
-Returns: `void`
+> 
+> 
+> Returns: `void`

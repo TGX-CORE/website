@@ -11,7 +11,7 @@ prev: false
 export Interface
 # DocumentFilePacket
 #### extends
- [`FilePacket`](./FilePacket.md),`Omit`\<[`MediaFilePacket`](./MediaFilePacket.md), `"duration"`\>
+ [`FilePacket`](./FilePacket.md),`Omit`<[`MediaFilePacket`](./MediaFilePacket.md), `"duration"`>
 
 ## Properties
 

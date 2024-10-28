@@ -7,7 +7,7 @@
     
     "plugin": [
         "typedoc-plugin-markdown",
-        "@tgx-core/website"
+        "./typedoc-plugin/formatter.mjs"
     ],
 
     "name": "TGX-CORE",

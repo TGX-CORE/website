@@ -31,9 +31,9 @@ This object represents a custom keyboard with reply options (see Introduction to
 ## Methods
 
 #### addRow( ...reply_buttons )
-Adds a new row of buttons to the current markup.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...reply_buttons` | [`ReplyKeyboardButton[]`](../type-aliases/ReplyKeyboardButton.md) | The reply keyboard buttons to display in this row. |
-
-Returns: [`ReplyKeyboardMarkup`](./ReplyKeyboardMarkup.md)
+> Adds a new row of buttons to the current markup.
+> 
+> Returns: [`ReplyKeyboardMarkup`](./ReplyKeyboardMarkup.md)

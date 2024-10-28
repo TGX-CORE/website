@@ -11,7 +11,7 @@ prev: false
 export Class
 # ChatJoinRequest
 #### extends
- `BaseClass`\<[`ChatJoinRequest`](./ChatJoinRequest.md), [`ChatJoinRequestPacket`](../interfaces/ChatJoinRequestPacket.md)\>
+ `BaseClass`<[`ChatJoinRequest`](./ChatJoinRequest.md), [`ChatJoinRequestPacket`](../interfaces/ChatJoinRequestPacket.md)>
 
 ## Constructor
  ```ts
@@ -41,8 +41,12 @@ export Class
 
 #### $asyncapprove( )
 
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncdecline( )
 
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>

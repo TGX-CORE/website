@@ -16,10 +16,10 @@ This object represents one shipping option.
 ## Properties
 
 #### id : `string`
- Shipping option unique identifier.
+ > Shipping option unique identifier.
 
 #### prices : [`LabeledPrices`](../classes/LabeledPrices.md) \| [`LabeledPrice[]`](./LabeledPrice.md)
- List of price portions or breakdown.
+ > List of price portions or breakdown.
 
 #### title : `string`
- Shipping option name or title.
+ > Shipping option name or title.

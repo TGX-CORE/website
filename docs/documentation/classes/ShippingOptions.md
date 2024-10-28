@@ -25,11 +25,11 @@ export Class
 ## Methods
 
 #### add( id, title, prices )
-Adds a new shipping option.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `string` | Shipping option identifier |
 | `title` | `string` | Shipping option title. |
 | `prices` | [`LabeledPrices`](./LabeledPrices.md) \| [`LabeledPrice[]`](../interfaces/LabeledPrice.md) | List of price portions. |
-
-Returns: [`ShippingOptions`](./ShippingOptions.md)
+> Adds a new shipping option.
+> 
+> Returns: [`ShippingOptions`](./ShippingOptions.md)

@@ -11,7 +11,7 @@ prev: false
 export Class
 # ShippingQuery
 #### extends
- `BaseClass`\<[`ShippingQuery`](./ShippingQuery.md), [`ShippingQueryPacket`](../interfaces/ShippingQueryPacket.md)\>
+ `BaseClass`<[`ShippingQuery`](./ShippingQuery.md), [`ShippingQueryPacket`](../interfaces/ShippingQueryPacket.md)>
 #### implements
  [`ShippingQueryPacket`](../interfaces/ShippingQueryPacket.md)
 
@@ -42,17 +42,17 @@ export Class
 ## Methods
 
 #### $asyncnotOk( error_message )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `error_message` | `string` | |
-
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>
 
 #### $asyncok( shipping_options )
-
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `shipping_options` | [`ShippingOptions`](./ShippingOptions.md) | |
-
-Returns: `Promise`\<`boolean`\>
+> 
+> 
+> Returns: `Promise`<`boolean`>
