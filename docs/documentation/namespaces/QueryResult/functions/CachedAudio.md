@@ -12,11 +12,10 @@ export Function
 # CachedAudio
 
 ## Constructor
- ```ts
+```ts
  QueryResult.CachedAudio( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultCachedAudioPayload`](../../../interfaces/QueryResultCachedAudioPayload.md) | The payload for the cached audio query result. |
 

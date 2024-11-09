@@ -13,8 +13,6 @@ export Interface
 
 ## Properties
 
-#### client? : [`Client`](../classes/Client.md)
-
 #### file_id? : `string`
 
 #### file_path? : `string`
@@ -22,3 +20,7 @@ export Interface
 #### file_size? : `number`
 
 #### file_unique_id? : `string`
+
+#### rest? : [`Rest`](../classes/Rest.md)
+
+#### token? : `string`

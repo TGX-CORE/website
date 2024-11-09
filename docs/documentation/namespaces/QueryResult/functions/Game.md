@@ -12,11 +12,10 @@ export Function
 # Game
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Game( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultGamePayload`](../../../interfaces/QueryResultGamePayload.md) | The payload for the game query result. |
 

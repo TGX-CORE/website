@@ -16,11 +16,10 @@ export Class
  `Partial`<[`MessageReactionCountPacket`](../interfaces/MessageReactionCountPacket.md)>
 
 ## Constructor
- ```ts
+```ts
  new MessageReactionCount( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`MessageReactionCountPacket`](../interfaces/MessageReactionCountPacket.md) | |

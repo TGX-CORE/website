@@ -12,11 +12,10 @@ export Function
 # Code
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.Code( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

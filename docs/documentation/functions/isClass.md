@@ -14,11 +14,10 @@ export Function
 Checks whether the value is a class or an instance of a class.
 
 ## Constructor
- ```ts
+```ts
  isClass( value )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `any` | The value to check. |
 

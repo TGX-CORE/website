@@ -12,11 +12,10 @@ export Class
 # PollAnswers
 
 ## Constructor
- ```ts
+```ts
  new PollAnswers( options )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `options` | [`PollOption[]`](../interfaces/PollOption.md) | |
 

@@ -14,11 +14,10 @@ export Class
  [`BaseGroupChat`](./BaseGroupChat.md)
 
 ## Constructor
- ```ts
+```ts
  new GroupChat( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`ChatPacket`](../interfaces/ChatPacket.md) | |
@@ -47,13 +46,13 @@ export Class
 
 #### requests : [`ChatRequestsManager`](./ChatRequestsManager.md)
 
-#### type : `"channel"` \| `"group"` \| `"supergroup"`
+#### type : `"group"` \| `"supergroup"` \| `"channel"`
 
 ## Methods
 
 #### $asyncadministrators( )
 
-> 
+> Get the administrators of the chat.
 > 
 > Returns: `Promise`<[`Member[]`](./Member.md)>
 
@@ -67,13 +66,13 @@ export Class
 
 #### $asyncdeletePhoto( )
 
-> 
+> Delete the current photo of the chat.
 > 
 > Returns: `Promise`<`boolean`>
 
 #### $asyncdeleteStickerSet( )
 
-> 
+> Deletes the current set of sticker from the current chat.
 > 
 > Returns: `Promise`<`boolean`>
 
@@ -89,15 +88,15 @@ export Class
 > 
 > Returns: `Promise`<`boolean`>
 
-#### $asyncsend( method, packet, form_data )
+#### $asyncsend( method, packet, form )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `method` | [`MessagePayloadMethod`](../enumerations/MessagePayloadMethod.md) | The method of the message. |
 | `packet` | [`MessagePayload`](../type-aliases/MessagePayload.md) | The packet of what the message will contain. |
-| `form_data?` | [`FormDataBuilder`](./FormDataBuilder.md) | The form data for uploading media, see also File |
+| `form?` | [`FormDataBuilder`](./FormDataBuilder.md) | The form data for uploading media, see also File . |
 > Sends a message to the current channel.
 > 
-> Returns: `Promise`<[`Message`](./Message.md)>
+> Returns: `Promise`<`false` \| [`Message`](./Message.md)>
 
 #### $asyncsendInvoice( id )
 | Parameter | Type | Description |
@@ -105,7 +104,7 @@ export Class
 | `id` | `string` | The id of the invoice. |
 > Sends the stored invoice with the id to the current chat.
 > 
-> Returns: `Promise`<`void` \| [`Message`](./Message.md)>
+> Returns: `Promise`<`null` \| [`Message`](./Message.md)>
 
 #### $asyncsendText( text )
 | Parameter | Type | Description |
@@ -113,37 +112,36 @@ export Class
 | `text` | `string` | The text content of the message. |
 > Sends a text message to the current chat.
 > 
-> Returns: `Promise`<[`Message`](./Message.md)>
+> Returns: `Promise`<`false` \| [`Message`](./Message.md)>
 
 #### $asyncsetDescription( description )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `description` | `string` | |
-> 
+| `description` | `string` | The new description of the chat. |
+> Set the description of the current chat.
 > 
 > Returns: `Promise`<`boolean`>
 
-#### $asyncsetPhoto( photo, form )
+#### $asyncsetPhoto( photo )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `photo` | [`InputFile`](../type-aliases/InputFile.md) | |
-| `form?` | `FormData` | |
-> 
+> Set the current photo of the chat.
 > 
 > Returns: `Promise`<`boolean`>
 
-#### $asyncsetStrickerSet( sticker_set_name )
+#### $asyncsetStickerSet( sticker_set_name )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `sticker_set_name` | `string` | |
-> 
+| `sticker_set_name` | `string` | The name of the set of stickers. |
+> Set the sticker set of the current chat.
 > 
 > Returns: `Promise`<`boolean`>
 
 #### $asyncsetTitle( title )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `title` | `string` | |
-> 
+| `title` | `string` | The new title of the chat. |
+> Set the title of the current chat.
 > 
 > Returns: `Promise`<`boolean`>

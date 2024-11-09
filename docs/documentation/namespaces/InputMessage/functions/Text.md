@@ -12,11 +12,10 @@ export Function
 # Text
 
 ## Constructor
- ```ts
+```ts
  InputMessage.Text( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`InputTextMessageContentPayload`](../../../interfaces/InputTextMessageContentPayload.md) | The payload of what the content of a message to be sent as a result of an inline query. |
 

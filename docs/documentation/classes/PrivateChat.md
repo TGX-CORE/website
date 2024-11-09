@@ -16,11 +16,10 @@ export Class
  [`PrivateChatPacket`](../interfaces/PrivateChatPacket.md)
 
 ## Constructor
- ```ts
+```ts
  new PrivateChat( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`ChatPacket`](../interfaces/ChatPacket.md) | |
@@ -81,12 +80,6 @@ export Class
 > 
 > Returns: [`MessageCollector`](./MessageCollector.md)
 
-#### $asyncdeleteStickerSet( )
-
-> 
-> 
-> Returns: `Promise`<`boolean`>
-
 #### $asyncfetch( )
 
 > 
@@ -99,15 +92,15 @@ export Class
 > 
 > Returns: `Promise`<`boolean`>
 
-#### $asyncsend( method, packet, form_data )
+#### $asyncsend( method, packet, form )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `method` | [`MessagePayloadMethod`](../enumerations/MessagePayloadMethod.md) | The method of the message. |
 | `packet` | [`MessagePayload`](../type-aliases/MessagePayload.md) | The packet of what the message will contain. |
-| `form_data?` | [`FormDataBuilder`](./FormDataBuilder.md) | The form data for uploading media, see also File |
+| `form?` | [`FormDataBuilder`](./FormDataBuilder.md) | The form data for uploading media, see also File . |
 > Sends a message to the current channel.
 > 
-> Returns: `Promise`<[`Message`](./Message.md)>
+> Returns: `Promise`<`false` \| [`Message`](./Message.md)>
 
 #### $asyncsendInvoice( id )
 | Parameter | Type | Description |
@@ -115,7 +108,7 @@ export Class
 | `id` | `string` | The id of the invoice. |
 > Sends the stored invoice with the id to the current chat.
 > 
-> Returns: `Promise`<`void` \| [`Message`](./Message.md)>
+> Returns: `Promise`<`null` \| [`Message`](./Message.md)>
 
 #### $asyncsendText( text )
 | Parameter | Type | Description |
@@ -123,28 +116,4 @@ export Class
 | `text` | `string` | The text content of the message. |
 > Sends a text message to the current chat.
 > 
-> Returns: `Promise`<[`Message`](./Message.md)>
-
-#### $asyncsetDescription( description )
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `description` | `string` | |
-> 
-> 
-> Returns: `Promise`<`boolean`>
-
-#### $asyncsetStrickerSet( sticker_set_name )
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `sticker_set_name` | `string` | |
-> 
-> 
-> Returns: `Promise`<`boolean`>
-
-#### $asyncsetTitle( title )
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `title` | `string` | |
-> 
-> 
-> Returns: `Promise`<`boolean`>
+> Returns: `Promise`<`false` \| [`Message`](./Message.md)>

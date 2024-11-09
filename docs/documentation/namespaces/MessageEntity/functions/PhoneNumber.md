@@ -12,11 +12,10 @@ export Function
 # PhoneNumber
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.PhoneNumber( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

@@ -12,11 +12,10 @@ export Function
 # CachedGif
 
 ## Constructor
- ```ts
+```ts
  QueryResult.CachedGif( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultCachedGifPayload`](../../../interfaces/QueryResultCachedGifPayload.md) | The payload for the cached GIF query result. |
 

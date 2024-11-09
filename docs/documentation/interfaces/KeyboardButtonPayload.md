@@ -19,6 +19,8 @@ This object represents one button of an inline keyboard. Exactly one of the opti
 
 #### callback_game? : `string`
 
+#### copy_text? : [`CopyText`](./CopyText.md)
+
 #### login_url? : [`LoginUrl`](./LoginUrl.md)
 
 #### pay? : `boolean`

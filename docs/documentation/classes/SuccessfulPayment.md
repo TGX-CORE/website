@@ -16,11 +16,10 @@ export Class
  [`SerializedSuccessfulPayment`](../interfaces/SerializedSuccessfulPayment.md)
 
 ## Constructor
- ```ts
+```ts
  new SuccessfulPayment( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`SerializedSuccessfulPayment`](../interfaces/SerializedSuccessfulPayment.md) | |

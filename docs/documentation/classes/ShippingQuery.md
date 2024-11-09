@@ -16,11 +16,10 @@ export Class
  [`ShippingQueryPacket`](../interfaces/ShippingQueryPacket.md)
 
 ## Constructor
- ```ts
+```ts
  new ShippingQuery( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`ShippingQuery`](./ShippingQuery.md) | |

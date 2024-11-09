@@ -11,14 +11,13 @@ prev: false
 export Class
 # PollOptions
 #### extends
- `Builder`
+ [`Builder`](./Builder.md)
 
 ## Constructor
- ```ts
+```ts
  new PollOptions( ...options )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...options` | [`PollOption[]`](../interfaces/PollOption.md) | The options of a poll to be sent. |
 

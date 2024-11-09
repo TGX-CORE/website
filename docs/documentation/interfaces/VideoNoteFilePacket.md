@@ -11,11 +11,9 @@ prev: false
 export Interface
 # VideoNoteFilePacket
 #### extends
- [`FilePacket`](./FilePacket.md)
+ `Omit`<[`FilePacket`](./FilePacket.md), `"token"` \| `"rest"`>
 
 ## Properties
-
-#### client? : [`Client`](../classes/Client.md)
 
 #### file_id? : `string`
 

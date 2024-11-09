@@ -12,11 +12,10 @@ export Function
 # Emoji
 
 ## Constructor
- ```ts
+```ts
  Emoji.Emoji( emoji )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `emoji` | [`AcceptedEmoji`](../../../type-aliases/AcceptedEmoji.md) | |
 

@@ -11,14 +11,13 @@ prev: false
 export Class
 # LabeledPrices
 #### extends
- `Builder`
+ [`Builder`](./Builder.md)
 
 ## Constructor
- ```ts
+```ts
  new LabeledPrices( ...prices )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...prices` | [`LabeledPrice[]`](../interfaces/LabeledPrice.md) | An array of labeled prices representing a portion of the price. |
 

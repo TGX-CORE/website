@@ -11,7 +11,7 @@ hero:
       link: /guidebook
     - theme: alt
       text: Documentation
-      link: /documentation
+      link: /documentation/README
 
 features:
   - title: Object Oriented

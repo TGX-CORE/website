@@ -13,7 +13,7 @@ export Interface
 
 ## Properties
 
-#### chat_type? : `"channel"` \| `"private"` \| `"group"` \| `"supergroup"`
+#### chat_type? : `"private"` \| `"group"` \| `"supergroup"` \| `"channel"`
 
 #### from : [`User`](../classes/User.md)
 

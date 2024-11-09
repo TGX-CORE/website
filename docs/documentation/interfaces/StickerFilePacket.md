@@ -11,11 +11,9 @@ prev: false
 export Interface
 # StickerFilePacket
 #### extends
- [`FilePacket`](./FilePacket.md),[`PhotoSizeFilePacket`](./PhotoSizeFilePacket.md)
+ `Omit`<[`FilePacket`](./FilePacket.md), `"token"` \| `"rest"`>,[`PhotoSizeFilePacket`](./PhotoSizeFilePacket.md)
 
 ## Properties
-
-#### client? : [`Client`](../classes/Client.md)
 
 #### custom_emoji_id? : `string`
 

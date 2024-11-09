@@ -12,11 +12,10 @@ export Class
 # MessageEntitiesStore
 
 ## Constructor
- ```ts
+```ts
  new MessageEntitiesStore( text, entities )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `text` | `string` | |
 | `entities` = `[]` | [`MessageEntityPayload[]`](../interfaces/MessageEntityPayload.md) | |

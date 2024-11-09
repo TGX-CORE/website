@@ -14,17 +14,22 @@ export Class
  `CachedManager`<`string`, [`ChatJoinRequest`](./ChatJoinRequest.md)>
 
 ## Constructor
- ```ts
+```ts
  new ChatRequestsManager( chat )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `chat` | [`BaseGroupChat`](./BaseGroupChat.md) | |
 
 ## Properties
 
 #### $get cache : `Collection`<`CachedManager.K`, `CachedManager.V`>
+
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### chat : [`BaseGroupChat`](./BaseGroupChat.md)
 

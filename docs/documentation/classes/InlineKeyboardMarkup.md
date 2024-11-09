@@ -11,16 +11,15 @@ prev: false
 export Class
 # InlineKeyboardMarkup
 #### extends
- `Builder`
+ [`Builder`](./Builder.md)
 
 This object represents an inline keyboard that appears right next to the message it belongs to.
 
 ## Constructor
- ```ts
+```ts
  new InlineKeyboardMarkup( ...inline_buttons )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...inline_buttons` | [`InlineKeyboardButton[][]`](../type-aliases/InlineKeyboardButton.md) | An array of arrays containing of buttons. |
 

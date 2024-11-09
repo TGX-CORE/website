@@ -15,6 +15,8 @@ export Interface
 
 ## Properties
 
+#### allow_paid_broadcast? : `boolean`
+
 #### allows_multiple_answers? : `boolean`
 
 #### business_connection_id? : `string`
@@ -57,8 +59,8 @@ export Interface
 
 #### question_parse_mode? : `string`
 
-#### reply_markup? : [`InlineKeyboardMarkup`](../classes/InlineKeyboardMarkup.md) \| [`ReplyKeyboardMarkup`](../classes/ReplyKeyboardMarkup.md) \| [`ForceReply`](../classes/ForceReply.md) \| [`ReplyKeyboardRemove`](../classes/ReplyKeyboardRemove.md)
+#### reply_markup? : [`InlineKeyboardMarkup`](../classes/InlineKeyboardMarkup.md) \| [`ReplyKeyboardMarkup`](../classes/ReplyKeyboardMarkup.md) \| [`ReplyKeyboardRemove`](../classes/ReplyKeyboardRemove.md) \| [`ForceReply`](../classes/ForceReply.md)
 
 #### reply_parameters? : [`ReplyParameters`](./ReplyParameters.md)
 
-#### type? : `"regular"` \| `"quiz"`
+#### type? : `"quiz"` \| `"regular"`

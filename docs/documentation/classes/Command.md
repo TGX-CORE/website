@@ -16,16 +16,17 @@ export abstract Class
 A command piece.
 
 ## Constructor
- ```ts
+```ts
  new Command( context_piece, context_metadata )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `context_piece` | `PieceContext` | |
 | `context_metadata` | [`CommandMeta`](../interfaces/CommandMeta.md) | |
 
 ## Properties
+
+#### $get enabled : `boolean`
 
 #### chat_groups? : `Object`
  > The chat ids along with their member ids to attach to the scope.
@@ -42,8 +43,6 @@ A command piece.
  > The description of the command.
 
 #### emitter : `any`
-
-#### enabled : `boolean`
 
 #### ignore : `boolean`
  > Wether to ignore the piece if it has been registered for faster intializing.

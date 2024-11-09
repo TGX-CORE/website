@@ -71,7 +71,7 @@ export Interface
 
 #### title? : `string`
 
-#### type : `"channel"` \| `"group"` \| `"supergroup"`
+#### type : `"group"` \| `"supergroup"` \| `"channel"`
 
 #### unrestrict_boost_count? : `number`
 

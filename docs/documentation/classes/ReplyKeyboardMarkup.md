@@ -11,16 +11,15 @@ prev: false
 export Class
 # ReplyKeyboardMarkup
 #### extends
- `Builder`
+ [`Builder`](./Builder.md)
 
 This object represents a custom keyboard with reply options (see Introduction to bots for details and examples). Not supported in channels and for messages sent on behalf of a Telegram Business account.
 
 ## Constructor
- ```ts
+```ts
  new ReplyKeyboardMarkup( is_persistent, resize_keyboard, one_time_keyboard, input_field_placeholder, selective )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `is_persistent?` | `boolean` | Requests clients to always show the keyboard when the regular keyboard is hidden. Defaults to false, in which case the custom keyboard can be hidden and opened with a keyboard icon. |
 | `resize_keyboard?` | `boolean` | Requests clients to resize the keyboard vertically for optimal fit (e.g., make the keyboard smaller if there are just two rows of buttons). Defaults to false, in which case the custom keyboard is always of the same height as the app's standard keyboard. |

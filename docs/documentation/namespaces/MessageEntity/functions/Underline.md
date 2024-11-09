@@ -12,11 +12,10 @@ export Function
 # Underline
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.Underline( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

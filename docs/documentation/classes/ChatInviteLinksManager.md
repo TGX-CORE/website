@@ -14,17 +14,22 @@ export Class
  `CachedManager`<`string`, `ChatInviteLink`>
 
 ## Constructor
- ```ts
+```ts
  new ChatInviteLinksManager( chat )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `chat` | [`SuperGroupChat`](./SuperGroupChat.md) \| [`GroupChat`](./GroupChat.md) \| [`ChannelChat`](./ChannelChat.md) | |
 
 ## Properties
 
 #### $get cache : `Collection`<`CachedManager.K`, `CachedManager.V`>
+
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### chat : [`SuperGroupChat`](./SuperGroupChat.md) \| [`GroupChat`](./GroupChat.md) \| [`ChannelChat`](./ChannelChat.md)
 

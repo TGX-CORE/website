@@ -14,17 +14,22 @@ export Class
  `CachedManager`<`number`, [`Member`](./Member.md)>
 
 ## Constructor
- ```ts
+```ts
  new MembersManager( chat )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `chat` | [`BaseGroupChat`](./BaseGroupChat.md) | |
 
 ## Properties
 
 #### $get cache : `Collection`<`CachedManager.K`, `CachedManager.V`>
+
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### chat : [`BaseGroupChat`](./BaseGroupChat.md)
 
@@ -68,14 +73,13 @@ export Class
 | `user_id` | `number` | |
 > 
 > 
-> Returns: `Promise`<[`Member`](./Member.md)>
+> Returns: `Promise`<`false` \| [`Member`](./Member.md)>
 
-#### $asyncpromote( user_id, is_anonymous, permissions )
+#### $asyncpromote( user_id, permissions )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `user_id` | `number` | |
-| `is_anonymous` | `boolean` | |
-| `permissions` | [`AdminPermissions`](../interfaces/AdminPermissions.md) | |
+| `permissions` | [`ChatAdministratorRights`](./ChatAdministratorRights.md) | |
 > 
 > 
 > Returns: `Promise`<`boolean`>

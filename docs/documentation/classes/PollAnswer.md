@@ -16,11 +16,10 @@ export Class
  [`PollAnswerPacket`](../interfaces/PollAnswerPacket.md)
 
 ## Constructor
- ```ts
+```ts
  new PollAnswer( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`PollAnswerPacket`](../interfaces/PollAnswerPacket.md) | |

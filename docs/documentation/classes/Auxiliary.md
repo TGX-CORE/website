@@ -14,20 +14,19 @@ export abstract Class
  `Piece`<[`AuxiliaryMeta`](../interfaces/AuxiliaryMeta.md)>
 
 ## Constructor
- ```ts
+```ts
  new Auxiliary( context_piece, context_metadata )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `context_piece` | `PieceContext` | |
 | `context_metadata` | [`AuxiliaryMeta`](../interfaces/AuxiliaryMeta.md) | |
 
 ## Properties
 
-#### $readonly client : [`Client`](./Client.md)
+#### $get enabled : `boolean`
 
-#### enabled : `boolean`
+#### $readonly client : [`Client`](./Client.md)
 
 #### name? : `string`
 

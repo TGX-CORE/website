@@ -13,6 +13,8 @@ export Interface
 
 ## Properties
 
+#### allow_paid_broadcast? : `boolean`
+
 #### chat_id? : `string` \| `number`
 
 #### disable_notification? : `boolean`

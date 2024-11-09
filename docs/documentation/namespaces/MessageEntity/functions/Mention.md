@@ -12,11 +12,10 @@ export Function
 # Mention
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.Mention( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | Offset in UTF-16 code units to the start of the entity |
 | `length` | `number` | Length of the entity in UTF-16 code units |

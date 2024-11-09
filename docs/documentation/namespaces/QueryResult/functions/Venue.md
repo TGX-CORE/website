@@ -12,11 +12,10 @@ export Function
 # Venue
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Venue( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultVenuePayload`](../../../interfaces/QueryResultVenuePayload.md) | The payload for the venue query result. |
 

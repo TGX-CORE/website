@@ -12,12 +12,11 @@ export Function
 # Photo
 
 ## Constructor
- ```ts
+```ts
  Media.Photo( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`InputMediaPhotoPayload`](../../../interfaces/InputMediaPhotoPayload.md) | The payload of what the media contains. |
 
-Return: Object
+Return: `Object`

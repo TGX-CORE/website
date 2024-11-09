@@ -11,11 +11,9 @@ prev: false
 export Interface
 # VoiceFilePacket
 #### extends
- [`FilePacket`](./FilePacket.md),`Omit`<[`MediaFilePacket`](./MediaFilePacket.md), `"file_name"`>
+ `Omit`<[`FilePacket`](./FilePacket.md), `"token"` \| `"rest"`>,`Omit`<[`MediaFilePacket`](./MediaFilePacket.md), `"file_name"`>
 
 ## Properties
-
-#### client? : [`Client`](../classes/Client.md)
 
 #### duration? : `number`
 

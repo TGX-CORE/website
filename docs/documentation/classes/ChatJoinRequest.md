@@ -14,11 +14,10 @@ export Class
  `BaseClass`<[`ChatJoinRequest`](./ChatJoinRequest.md), [`ChatJoinRequestPacket`](../interfaces/ChatJoinRequestPacket.md)>
 
 ## Constructor
- ```ts
+```ts
  new ChatJoinRequest( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`ChatJoinRequestPacket`](../interfaces/ChatJoinRequestPacket.md) | |
@@ -41,12 +40,12 @@ export Class
 
 #### $asyncapprove( )
 
-> 
+> Approves the join request.
 > 
 > Returns: `Promise`<`boolean`>
 
 #### $asyncdecline( )
 
-> 
+> Rejects the join request.
 > 
 > Returns: `Promise`<`boolean`>

@@ -12,11 +12,10 @@ export Function
 # Location
 
 ## Constructor
- ```ts
+```ts
  InputMessage.Location( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`InputLocationMessageContentPayload`](../../../interfaces/InputLocationMessageContentPayload.md) | The payload of what the content of a message to be sent as a result of an inline query. |
 

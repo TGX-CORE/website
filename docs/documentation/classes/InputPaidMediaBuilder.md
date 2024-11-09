@@ -11,14 +11,13 @@ prev: false
 export Class
 # InputPaidMediaBuilder
 #### extends
- `Builder`
+ [`Builder`](./Builder.md)
 
 ## Constructor
- ```ts
+```ts
  new InputPaidMediaBuilder( ...medias )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...medias` | [`InputPaidMedia[]`](../type-aliases/InputPaidMedia.md) | The medias to be attached to this builder. |
 

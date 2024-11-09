@@ -12,12 +12,11 @@ export Function
 # Animation
 
 ## Constructor
- ```ts
+```ts
  Media.Animation( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`InputMediaAnimationPayload`](../../../interfaces/InputMediaAnimationPayload.md) | The payload of what the media contains. |
 
-Return: Object
+Return: `Object`

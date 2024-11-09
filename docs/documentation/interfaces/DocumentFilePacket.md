@@ -11,11 +11,9 @@ prev: false
 export Interface
 # DocumentFilePacket
 #### extends
- [`FilePacket`](./FilePacket.md),`Omit`<[`MediaFilePacket`](./MediaFilePacket.md), `"duration"`>
+ `Omit`<[`FilePacket`](./FilePacket.md), `"token"` \| `"rest"`>,`Omit`<[`MediaFilePacket`](./MediaFilePacket.md), `"duration"`>
 
 ## Properties
-
-#### client? : [`Client`](../classes/Client.md)
 
 #### file_id? : `string`
 

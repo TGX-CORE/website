@@ -16,11 +16,10 @@ export Class
  `Partial`<[`ChatBoostUpdated`](../interfaces/ChatBoostUpdated.md)>,`Partial`<[`ChatBoostRemoved`](../interfaces/ChatBoostRemoved.md)>
 
 ## Constructor
- ```ts
+```ts
  new ChatBoost( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`ChatBoostUpdated`](../interfaces/ChatBoostUpdated.md) \| [`ChatBoostRemoved`](../interfaces/ChatBoostRemoved.md) | |

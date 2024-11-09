@@ -14,11 +14,10 @@ export Class
  [`Collector`](./Collector.md)<[`MessageCollectorOptions`](../interfaces/MessageCollectorOptions.md), `number`, [`Message`](./Message.md)>
 
 ## Constructor
- ```ts
+```ts
  new MessageCollector( chat, options )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `chat` | [`Chat`](../type-aliases/Chat.md) | |
 | `options` = `{}` | [`MessageCollectorOptions`](../interfaces/MessageCollectorOptions.md) | |

@@ -12,11 +12,10 @@ export Function
 # Video
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Video( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultVideoPayload`](../../../interfaces/QueryResultVideoPayload.md) | The payload for the video query result. |
 

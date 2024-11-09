@@ -14,11 +14,10 @@ export Class
  [`Collector`](./Collector.md)<[`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md), `string`, [`CallbackQuery`](./CallbackQuery.md)>
 
 ## Constructor
- ```ts
+```ts
  new CallbackCollector( message, options )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `message` | [`Message`](./Message.md) | |
 | `options` | [`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md) | |

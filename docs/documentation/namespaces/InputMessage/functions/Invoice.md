@@ -12,11 +12,10 @@ export Function
 # Invoice
 
 ## Constructor
- ```ts
+```ts
  InputMessage.Invoice( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`InputInvoiceMessageContentPayload`](../../../interfaces/InputInvoiceMessageContentPayload.md) | The payload of what the content of a message to be sent as a result of an inline query. |
 

@@ -14,11 +14,10 @@ export Function
 Checks whether the value is a JSON.
 
 ## Constructor
- ```ts
+```ts
  isJson( value )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `value` | `unknown` | The value to check. |
 

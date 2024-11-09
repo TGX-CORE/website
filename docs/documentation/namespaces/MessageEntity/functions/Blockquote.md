@@ -12,11 +12,10 @@ export Function
 # Blockquote
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.Blockquote( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

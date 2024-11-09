@@ -21,6 +21,6 @@ export Interface
 
 #### last_name? : `string`
 
-#### type : `"channel"` \| `"private"` \| `"group"` \| `"supergroup"`
+#### type : `"private"` \| `"group"` \| `"supergroup"` \| `"channel"`
 
 #### user_name? : `string`

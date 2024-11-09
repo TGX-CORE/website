@@ -12,11 +12,10 @@ export Function
 # Button
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Button( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultButtonPayload`](../../../interfaces/QueryResultButtonPayload.md) | The payload for the button query result. |
 

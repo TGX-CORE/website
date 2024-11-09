@@ -12,11 +12,10 @@ export Function
 # CachedVoice
 
 ## Constructor
- ```ts
+```ts
  QueryResult.CachedVoice( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultCachedVoicePayload`](../../../interfaces/QueryResultCachedVoicePayload.md) | The payload for the cached voice query result. |
 

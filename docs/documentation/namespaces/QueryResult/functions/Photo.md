@@ -12,11 +12,10 @@ export Function
 # Photo
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Photo( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultPhotoPayload`](../../../interfaces/QueryResultPhotoPayload.md) | The payload for the photo query result. |
 

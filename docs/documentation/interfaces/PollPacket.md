@@ -45,4 +45,4 @@ export Interface
 
 #### total_voter_count : `number`
 
-#### type : `"regular"` \| `"quiz"`
+#### type : `"quiz"` \| `"regular"`

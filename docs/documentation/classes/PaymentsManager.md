@@ -14,17 +14,22 @@ export Class
  `CachedManager`<`number`, [`SuccessfulPayment`](./SuccessfulPayment.md)>
 
 ## Constructor
- ```ts
+```ts
  new PaymentsManager( client )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 
 ## Properties
 
 #### $get cache : `Collection`<`CachedManager.K`, `CachedManager.V`>
+
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### $readonly client : [`Client`](./Client.md)
 

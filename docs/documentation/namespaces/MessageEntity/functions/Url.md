@@ -12,11 +12,10 @@ export Function
 # Url
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.Url( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

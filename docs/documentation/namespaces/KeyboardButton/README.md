@@ -17,6 +17,7 @@ export Namespace
 | :--- | :--- | :--- |
 | CallbackData | [`CallbackData`](functions\CallbackData.md) | |
 | CallbackGame | [`CallbackGame`](functions\CallbackGame.md) | |
+| CopyText | [`CopyText`](functions\CopyText.md) | |
 | LoginUrl | [`LoginUrl`](functions\LoginUrl.md) | |
 | Pay | [`Pay`](functions\Pay.md) | |
 | SwitchInlineQuery | [`SwitchInlineQuery`](functions\SwitchInlineQuery.md) | |

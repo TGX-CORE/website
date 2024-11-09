@@ -12,7 +12,7 @@ export Function
 # Paid
 
 ## Constructor
- ```ts
+```ts
  Emoji.Paid( )
  ```
 

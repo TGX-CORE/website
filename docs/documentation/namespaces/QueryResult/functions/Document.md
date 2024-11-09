@@ -12,11 +12,10 @@ export Function
 # Document
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Document( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultDocumentPayload`](../../../interfaces/QueryResultDocumentPayload.md) | The payload for the document query result. |
 

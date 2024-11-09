@@ -16,11 +16,10 @@ export Class
  `Partial`<[`PollPacket`](../interfaces/PollPacket.md)>
 
 ## Constructor
- ```ts
+```ts
  new Poll( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`PollPacket`](../interfaces/PollPacket.md) | |
@@ -65,7 +64,7 @@ export Class
 
 #### total_voter_count : `number`
 
-#### type : `"regular"` \| `"quiz"`
+#### type : `"quiz"` \| `"regular"`
 
 ## Methods
 

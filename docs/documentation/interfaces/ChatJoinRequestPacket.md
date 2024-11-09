@@ -15,7 +15,7 @@ export Interface
 
 #### bio : `string`
 
-#### chat? : [`BaseChat`](../classes/BaseChat.md)
+#### chat? : [`ChatPacket`](./ChatPacket.md)
 
 #### date : `number`
 

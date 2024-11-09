@@ -12,11 +12,10 @@ export Function
 # TextMention
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.TextMention( offset, length, user )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

@@ -11,11 +11,9 @@ prev: false
 export Interface
 # AnimationFilePacket
 #### extends
- [`FilePacket`](./FilePacket.md),[`MediaFilePacket`](./MediaFilePacket.md),[`PhotoSizeFilePacket`](./PhotoSizeFilePacket.md)
+ `Omit`<[`FilePacket`](./FilePacket.md), `"token"` \| `"rest"`>,[`MediaFilePacket`](./MediaFilePacket.md),[`PhotoSizeFilePacket`](./PhotoSizeFilePacket.md)
 
 ## Properties
-
-#### client? : [`Client`](../classes/Client.md)
 
 #### duration? : `number`
 

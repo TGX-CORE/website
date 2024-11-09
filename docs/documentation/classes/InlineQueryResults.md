@@ -11,14 +11,13 @@ prev: false
 export Class
 # InlineQueryResults
 #### extends
- `Builder`
+ [`Builder`](./Builder.md)
 
 ## Constructor
- ```ts
+```ts
  new InlineQueryResults( ...results )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...results` | [`InlineQueryResult[]`](../type-aliases/InlineQueryResult.md) | Array of results for the inline query |
 

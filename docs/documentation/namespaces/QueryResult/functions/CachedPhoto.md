@@ -12,11 +12,10 @@ export Function
 # CachedPhoto
 
 ## Constructor
- ```ts
+```ts
  QueryResult.CachedPhoto( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultCachedPhotoPayload`](../../../interfaces/QueryResultCachedPhotoPayload.md) | The payload for the cached photo query result. |
 

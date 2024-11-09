@@ -11,16 +11,15 @@ prev: false
 export Class
 # Invoice
 #### extends
- `Builder`
+ [`Builder`](./Builder.md)
 #### implements
  [`StoredInvoice`](../interfaces/StoredInvoice.md)
 
 ## Constructor
- ```ts
+```ts
  new Invoice( title, description, currency, payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `title` | `string` | The title of the invoice. |
 | `description` | `string` | The description of the invoice. |

@@ -12,11 +12,10 @@ export Function
 # Article
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Article( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultArticlePayload`](../../../interfaces/QueryResultArticlePayload.md) | The payload for the article query result. |
 

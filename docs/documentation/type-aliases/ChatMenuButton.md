@@ -11,4 +11,4 @@ prev: false
 export TypeAlias
 # ChatMenuButton
 
-[`MenuButton.Default`](../namespaces/MenuButton/functions/Default.md) \| [`MenuButton.Commands`](../namespaces/MenuButton/functions/Commands.md) \| [`MenuButton.WebApp`](../namespaces/MenuButton/functions/WebApp.md)
+[`DefaultChatMenuButton`](../interfaces/DefaultChatMenuButton.md) \| [`CommandsChatMenuButton`](../interfaces/CommandsChatMenuButton.md) \| [`WebappChatMenuButton`](../interfaces/WebappChatMenuButton.md)

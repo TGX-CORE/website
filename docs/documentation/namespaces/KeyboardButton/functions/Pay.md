@@ -16,11 +16,10 @@ To send a Pay button. Substrings “⭐” and “XTR” in the button's text wi
 NOTE: This type of button must always be the first button in the first row and can only be used in invoice messages.
 
 ## Constructor
- ```ts
+```ts
  KeyboardButton.Pay( text )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `text` | `string` | Label text on the button. |
 

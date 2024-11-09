@@ -16,11 +16,10 @@ export Class
  [`ChosenInlineResultPacket`](../interfaces/ChosenInlineResultPacket.md)
 
 ## Constructor
- ```ts
+```ts
  new ChosenInlineResult( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`ChosenInlineResult`](./ChosenInlineResult.md) | |

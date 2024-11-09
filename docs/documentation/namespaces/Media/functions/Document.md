@@ -12,12 +12,11 @@ export Function
 # Document
 
 ## Constructor
- ```ts
+```ts
  Media.Document( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`InputMediaDocumentPayload`](../../../interfaces/InputMediaDocumentPayload.md) | The payload of what the media contains. |
 
-Return: Object
+Return: `Object`

@@ -12,11 +12,10 @@ export Function
 # Italic
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.Italic( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

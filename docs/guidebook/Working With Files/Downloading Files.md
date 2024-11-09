@@ -2,26 +2,31 @@
 outline: 'deep'
 ---
 # Downloading Files
-
 `tgx-core` exports a [`File`](../../documentation/classes/File) class that you can use to download files.
 
+::: info
+
 Before you can download a file, you need to fetch it first according to the Telegram API.
-> When fetching a file, it generates a `file_path`. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling.
+> When fetching a file, it generates a `file_path`. It is guaranteed that the link will be valid for at least 1 hour. When the link expires, a new one can be requested by calling `File.fetch()`.
+
+Calling the `File.download()` method will also call `File.fetch()` so you don't need to fetch it for downloading.
+:::
 
 ### Downloading
-Calling the `download()` method will also call `fetch()`.
+To download a file, you may call the method [`File.download()`](../../documentation/classes/File#asyncdownload-path) with a path to where you want to download the file.
+
+If the class `File` belongs to the client, it is already passed with the rest from the client itself. Otherwise, you'll need to set the token for the class to be able to acccess the api for fetching and downloading the file.
+
+::: info
+If there is no token set for the class `File`, it will read your environment variables.
+
+`File.token = token or process.env['TELEGRAM_TOKEN']`
+:::
 
 ```js
-message.photo[0].download('C:/../../../media/photo.png')
-```
-
-### Downloading by file_id
-Since `File` is an independent class, you'll need to attach your client to the class. Ensure the id is correct otherwise it will return `false`.
-
-```js
-new File('<file_id>')
-    .setClient(client)
-    .download('C:/../../../media/photo.png')
+new File('<file-id>')
+    .setToken('<token>')
+    .download()
 ```
 
 ## Reference

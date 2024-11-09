@@ -12,12 +12,11 @@ export Function
 # Photo
 
 ## Constructor
- ```ts
+```ts
  PaidMedia.Photo( media )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `media` | `string` | The media to attach. |
 
-Return: Object
+Return: `Object`

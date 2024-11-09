@@ -16,11 +16,10 @@ export Class
  [`ChatMemberUpdatedPacket`](../interfaces/ChatMemberUpdatedPacket.md)
 
 ## Constructor
- ```ts
+```ts
  new ChatMemberUpdated( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`ChatMemberUpdatedPacket`](../interfaces/ChatMemberUpdatedPacket.md) | |

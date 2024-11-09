@@ -12,11 +12,10 @@ export Function
 # Contact
 
 ## Constructor
- ```ts
+```ts
  InputMessage.Contact( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`InputContactMessageContentPayload`](../../../interfaces/InputContactMessageContentPayload.md) | The payload of what the content of a message to be sent as a result of an inline query. |
 

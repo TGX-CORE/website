@@ -14,11 +14,10 @@ export Function
 The user's current location will be sent when the button is pressed. Available in private chats only.
 
 ## Constructor
- ```ts
+```ts
  ReplyButton.Location( text )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `text` | `string` | Label text on the button. |
 

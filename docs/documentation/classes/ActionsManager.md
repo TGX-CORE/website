@@ -14,15 +14,20 @@ export Class
  `BaseManager`<[`ActionsOptions`](../interfaces/ActionsOptions.md)>
 
 ## Constructor
- ```ts
+```ts
  new ActionsManager( client )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 
 ## Properties
+
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### $readonly client : [`Client`](./Client.md)
 

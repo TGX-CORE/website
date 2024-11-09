@@ -11,16 +11,15 @@ prev: false
 export Class
 # Reactions
 #### extends
- `Builder`
+ [`Builder`](./Builder.md)
 
 Represents an array of reactions.
 
 ## Constructor
- ```ts
+```ts
  new Reactions( ...emojis )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...emojis` | [`Emojis[]`](../type-aliases/Emojis.md) | The emojis of what the payload should contain. |
 

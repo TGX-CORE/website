@@ -12,11 +12,10 @@ export Function
 # Email
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.Email( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

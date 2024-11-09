@@ -12,11 +12,10 @@ export Function
 # Audio
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Audio( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultAudioPayload`](../../../interfaces/QueryResultAudioPayload.md) | The payload for the audio query result. |
 

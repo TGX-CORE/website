@@ -14,11 +14,10 @@ export abstract Class
  `EventEmitter`
 
 ## Constructor
- ```ts
+```ts
  new Collector( client, options )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `options` | `Collector.O` | |

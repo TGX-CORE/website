@@ -12,11 +12,10 @@ export Function
 # BotCommand
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.BotCommand( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

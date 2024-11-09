@@ -16,22 +16,21 @@ export abstract Class
 An event piece.
 
 ## Constructor
- ```ts
+```ts
  new Event( context_piece, context_metadata )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `context_piece` | `PieceContext` | |
 | `context_metadata` | [`EventMeta`](../interfaces/EventMeta.md) | |
 
 ## Properties
 
+#### $get enabled : `boolean`
+
 #### $readonly client : [`Client`](./Client.md)
 
 #### emitter : `any`
-
-#### enabled : `boolean`
 
 #### event : `string`
 
@@ -42,6 +41,20 @@ An event piece.
 #### registry : `EventsRegistry`
 
 ## Methods
+
+#### disable( )
+
+> Stops and disables the piece.
+> 
+> Returns: `void`
+
+#### enable( resume )
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `resume?` | `boolean` | Wether to resume the piece, must be enabled. |
+> Enables the piece.
+> 
+> Returns: `void`
 
 #### listen( )
 

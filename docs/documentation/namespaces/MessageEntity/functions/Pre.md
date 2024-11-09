@@ -12,11 +12,10 @@ export Function
 # Pre
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.Pre( offset, length, language )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

@@ -12,11 +12,10 @@ export Function
 # Contact
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Contact( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultContactPayload`](../../../interfaces/QueryResultContactPayload.md) | The payload for the contact query result. |
 

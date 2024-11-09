@@ -14,11 +14,10 @@ export Class
  `BaseClass`<[`MessageReaction`](./MessageReaction.md), [`MessageReactionPacket`](../interfaces/MessageReactionPacket.md)>
 
 ## Constructor
- ```ts
+```ts
  new MessageReaction( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`MessageReactionPacket`](../interfaces/MessageReactionPacket.md) | |

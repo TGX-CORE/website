@@ -12,11 +12,10 @@ export Function
 # Spoiler
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.Spoiler( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

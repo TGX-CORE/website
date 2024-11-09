@@ -14,17 +14,22 @@ export Class
  `CachedManager`<`string`, [`Poll`](./Poll.md)>
 
 ## Constructor
- ```ts
+```ts
  new PollsManager( client )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 
 ## Properties
 
 #### $get cache : `Collection`<`CachedManager.K`, `CachedManager.V`>
+
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### $readonly client : [`Client`](./Client.md)
 

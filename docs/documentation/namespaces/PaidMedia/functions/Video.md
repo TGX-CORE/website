@@ -12,11 +12,10 @@ export Function
 # Video
 
 ## Constructor
- ```ts
+```ts
  PaidMedia.Video( media, thumbnail, width, height, duration, supports_streaming )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `media` | `string` | The media to attach. |
 | `thumbnail?` | `string` | The thumbnail of the media to attach. |
@@ -25,4 +24,4 @@ export Function
 | `duration?` | `number` | Video duration. |
 | `supports_streaming?` | `boolean` | Pass *True* if the uploaded video is suitable for streaming |
 
-Return: Object
+Return: `Object`

@@ -12,11 +12,10 @@ export Function
 # CachedVideo
 
 ## Constructor
- ```ts
+```ts
  QueryResult.CachedVideo( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultCachedVideoPayload`](../../../interfaces/QueryResultCachedVideoPayload.md) | The payload for the cached video query result. |
 

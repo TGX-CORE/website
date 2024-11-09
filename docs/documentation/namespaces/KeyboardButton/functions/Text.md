@@ -12,11 +12,10 @@ export Function
 # Text
 
 ## Constructor
- ```ts
+```ts
  KeyboardButton.Text( text )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `text` | `string` | Label text on the button. |
 

@@ -11,65 +11,52 @@ prev: false
 export Class
 # WebhookManager
 #### extends
- `BaseManager`<[`WebhookManagerOptions`](../interfaces/WebhookManagerOptions.md)>
+ `BaseManager`
 
 ## Constructor
- ```ts
- new WebhookManager( client )
+```ts
+ new WebhookManager( client, pointer, defaults )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
+| `pointer?` | `string` | |
+| `defaults?` | `any` | |
 
 ## Properties
 
-#### $get endpoint : `string`
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### $readonly client : [`Client`](./Client.md)
 
-#### $readonly default? : [`WebhookManagerOptions`](../interfaces/WebhookManagerOptions.md)
+#### $readonly default? : `any`
 
-#### express : `any`
-
-#### $static max : `number`
- 
- > default: 65535
-
-#### $static min : `number`
- 
- > default: 1024
-
-#### $readonly options : [`WebhookManagerOptions`](../interfaces/WebhookManagerOptions.md)
+#### $readonly options : `any`
 
 ## Methods
 
 #### $asyncdelete( drop_pending_updates )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `drop_pending_updates?` | `boolean` | Pass True to drop all pending updates |
-> Deletes the webhook from Telegram.
+| `drop_pending_updates?` | `boolean` | |
+> 
 > 
 > Returns: `Promise`<`boolean`>
 
 #### $asyncget( )
 
-> Gets the webhook information from Telegram.
+> 
 > 
 > Returns: `Promise`<`boolean` \| [`WebhookInfo`](../interfaces/WebhookInfo.md)>
-
-#### $asyncintialize( )
-
-> 
-> 
-> Returns: `Promise`<`void`>
 
 #### $asyncset( options )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `options` = `...` | [`WebhookManagerOptions`](../interfaces/WebhookManagerOptions.md) | |
-> Updates the webhook on the Telegram api.
-
-The following values are taken from options: drop_pending_updates, secret_token, max_connections, ip_address, certificate.
+| `options` | [`WebhookEndpointOptions`](../interfaces/WebhookEndpointOptions.md) \| `WebhookCluster` | |
+> 
 > 
 > Returns: `Promise`<`boolean`>

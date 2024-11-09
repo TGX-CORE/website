@@ -16,11 +16,10 @@ export Class
  [`SerializedForumTopicPacket`](../interfaces/SerializedForumTopicPacket.md)
 
 ## Constructor
- ```ts
+```ts
  new ForumTopic( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`SerializedForumTopicPacket`](../interfaces/SerializedForumTopicPacket.md) | |
@@ -47,7 +46,7 @@ export Class
 
 #### $asyncclose( )
 
-> 
+> Close the current forum topic.
 > 
 > Returns: `Promise`<`boolean`>
 
@@ -61,34 +60,34 @@ export Class
 
 #### $asyncdelete( )
 
-> 
+> Delete the current forum topic.
 > 
 > Returns: `Promise`<`boolean`>
 
 #### $asyncedit( name, icon_custom_emoji_id )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `name?` | `string` | |
-| `icon_custom_emoji_id?` | `string` | |
-> 
+| `name?` | `string` | The new name of the forum topic. |
+| `icon_custom_emoji_id?` | `string` | The id of the new custom emoji of the forum topic. |
+> Edit the current forum topic.
 > 
 > Returns: `Promise`<`boolean`>
 
 #### $asyncreopen( )
 
-> 
+> Reopen the current forum topic.
 > 
 > Returns: `Promise`<`boolean`>
 
-#### $asyncsend( method, packet, form_data )
+#### $asyncsend( method, packet, form )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `method` | [`MessagePayloadMethod`](../enumerations/MessagePayloadMethod.md) | The method of the message. |
 | `packet` | [`MessagePayload`](../type-aliases/MessagePayload.md) | The packet of what the message will contain. |
-| `form_data?` | [`FormDataBuilder`](./FormDataBuilder.md) | The form data for uploading media, see also File |
+| `form?` | [`FormDataBuilder`](./FormDataBuilder.md) | The form data for uploading media, see also File . |
 > Sends a message to the current channel.
 > 
-> Returns: `Promise`<[`Message`](./Message.md)>
+> Returns: `Promise`<`false` \| [`Message`](./Message.md)>
 
 #### $asyncsendInvoice( id )
 | Parameter | Type | Description |
@@ -96,7 +95,7 @@ export Class
 | `id` | `string` | The id of the invoice. |
 > Sends the stored invoice with the id to the current chat.
 > 
-> Returns: `Promise`<`void` \| [`Message`](./Message.md)>
+> Returns: `Promise`<`null` \| [`Message`](./Message.md)>
 
 #### $asyncsendText( text )
 | Parameter | Type | Description |
@@ -104,10 +103,10 @@ export Class
 | `text` | `string` | The text content of the message. |
 > Sends a text message to the current chat.
 > 
-> Returns: `Promise`<[`Message`](./Message.md)>
+> Returns: `Promise`<`false` \| [`Message`](./Message.md)>
 
 #### $asyncunpinAll( )
 
-> 
+> Unpin all the messages of the current topic.
 > 
 > Returns: `Promise`<`boolean`>

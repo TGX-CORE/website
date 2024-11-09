@@ -16,11 +16,10 @@ export Class
  [`PreCheckoutQueryPacket`](../interfaces/PreCheckoutQueryPacket.md)
 
 ## Constructor
- ```ts
+```ts
  new PreCheckoutQuery( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`PreCheckoutQuery`](./PreCheckoutQuery.md) | |

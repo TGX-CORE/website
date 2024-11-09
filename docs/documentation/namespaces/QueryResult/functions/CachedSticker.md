@@ -12,11 +12,10 @@ export Function
 # CachedSticker
 
 ## Constructor
- ```ts
+```ts
  QueryResult.CachedSticker( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultCachedStickerPayload`](../../../interfaces/QueryResultCachedStickerPayload.md) | The payload for the cached sticker query result. |
 

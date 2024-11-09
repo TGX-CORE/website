@@ -12,17 +12,41 @@ export Class
 # File
 
 #### implements
- [`FilePacket`](../interfaces/FilePacket.md)
+ `Omit`<[`FilePacket`](../interfaces/FilePacket.md), `"token"` \| `"rest"`>
+
+If there is no token set, it will get Token from your environment variables 
+[EnvironmentVariables](../enumerations/EnvironmentVariables.md)
+.
 
 ## Constructor
+::: details `new File( packet )`
  ```ts
- new File( packet, options )
+ new File( packet )
  ```
- 
+
  | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `packet?` | `string` \| [`FilePacket`](../interfaces/FilePacket.md) | The packet, the filel_id, or absolute path to the file to read. |
-| `options?` | `FormData.AppendOptions` | Append options for uploading file, can be empty. |
+| `packet` | [`FilePacket`](../interfaces/FilePacket.md) | The packet metadata of the file. |
+ :::
+::: details `new File( file_id )`
+ ```ts
+ new File( file_id )
+ ```
+
+ | Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `file_id` | `string` | The id of the file. |
+ :::
+::: details `new File( path, options )`
+ ```ts
+ new File( path, options )
+ ```
+
+ | Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `path` | `string` | The absolute path to the file to attach. |
+| `options?` | `FormData.AppendOptions` | Additional append options for uploading file, can be empty. |
+ :::
 
 ## Properties
 
@@ -30,8 +54,7 @@ export Class
 
 #### $get id : `string`
 
-#### $readonly client? : [`Client`](./Client.md)
- > The client will only be availble if the class is passed by tgx-core itself.
+#### $get partial : `boolean`
 
 #### file_id? : `string`
 
@@ -45,26 +68,36 @@ export Class
 
 #### path? : `string`
 
+#### rest? : [`Rest`](./Rest.md)
+
+#### token? : `string`
+
 ## Methods
 
 #### $asyncdownload( path )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `path` | `string` | Leave empty if you want a stream, or an absolute path to the file where you want to write the Stream. |
-> Fetches the file and downloads it.
+| `path?` | `string` | The absolute path to a file where you want to write the data. |
+> Downloads the file, must have a token.
 > 
 > Returns: `Promise`<`boolean` \| `internal.Stream`>
 
 #### $asyncfetch( )
 
-> Fetch the file from Telegram, this is required for downloading the file.
+> Fetches the file, ensure that you have set the token or otherwise it will return the same instance.
 > 
-> Returns: `Promise`<`boolean` \| [`File`](./File.md)>
+> Returns: `Promise`<[`File`](./File.md)>
 
-#### setClient( client )
+#### parse( )
+
+> Returns the id of the file or the attach of the attached file.
+> 
+> Returns: `string`
+
+#### setToken( token )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `client` | [`Client`](./Client.md) | The client to attach. |
-> 
+| `token` | `string` | The token to set, this is exclusive to this class. |
+> Sets the token for fetching and downloading.
 > 
 > Returns: [`File`](./File.md)

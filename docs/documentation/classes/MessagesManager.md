@@ -14,17 +14,22 @@ export Class
  `CachedManager`<`number`, [`Message`](./Message.md)>
 
 ## Constructor
- ```ts
+```ts
  new MessagesManager( chat )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `chat` | [`BaseChat`](./BaseChat.md) | |
 
 ## Properties
 
 #### $get cache : `Collection`<`CachedManager.K`, `CachedManager.V`>
+
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### chat : [`BaseChat`](./BaseChat.md)
 

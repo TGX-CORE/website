@@ -194,8 +194,8 @@ class CustomMarkdownThemeContext extends MarkdownThemeContext {
                 case ReflectionKind.Variable:
                     push(output, this.partials.header(model))
                     push(output, this.partials.comment('', model))
-                    
-                    push(output, this.partials.type(model, model.type, true))
+
+                    push(output, this.partials.type(model, model.type, true, true))
                     break
             }
 
@@ -218,14 +218,29 @@ class CustomMarkdownThemeContext extends MarkdownThemeContext {
         },
 
         constructor: ( model, constructor ) => {
-            constructor = constructor.signatures?.[0] ?? constructor
+            let processed = [ ], signatures = constructor.signatures ?? [constructor]
+            push(processed, `## Constructor`)
+            for(let signature of signatures){
+                if(signatures.length > 1){
+                    push(processed, `
+                    ::: details \`${ signature.kind == ReflectionKind.ConstructorSignature ? 'new ' : '' }${ signature.getFriendlyFullName().replace('.constructor', '') }( ${this.partials.parametersLine(model, signature.parameters)} )\`
+                    \`\`\`ts
+                    ${ signature.kind == ReflectionKind.ConstructorSignature ? 'new ' : '' }${ signature.getFriendlyFullName().replace('.constructor', '') }( ${this.partials.parametersLine(model, signature.parameters)} )
+                    \`\`\`
 
-            return `## Constructor
-            \`\`\`ts
-            ${ constructor.kind == ReflectionKind.ConstructorSignature ? 'new ' : '' }${ constructor.getFriendlyFullName().replace('.constructor', '') }( ${this.partials.parametersLine(model, constructor.parameters)} )
-            \`\`\`
-            
-            ${ this.partials.parameters(model, constructor.parameters)}`
+                    ${this.partials.parameters(model, signature.parameters)}
+                    :::
+                    `)
+                } else {
+                    push(processed,
+                    `\`\`\`ts
+                    ${ signature.kind == ReflectionKind.ConstructorSignature ? 'new ' : '' }${ signature.getFriendlyFullName().replace('.constructor', '') }( ${this.partials.parametersLine(model, signature.parameters)} )
+                    \`\`\``)
+                    push(processed, this.partials.parameters(model, signature.parameters))
+                }
+            }
+
+            return processed.join('\n')
         },
         
         property: (model, property) => {
@@ -326,7 +341,7 @@ class CustomMarkdownThemeContext extends MarkdownThemeContext {
             return processed.join('\n')
         },
 
-        type: ( model, type, wrap ) => {
+        type: ( model, type, wrap, expand ) => {
             let processed = [ ]
             switch(type.type){
                 case 'union':
@@ -346,7 +361,7 @@ class CustomMarkdownThemeContext extends MarkdownThemeContext {
                     let name = type.qualifiedName ?? type.name ?? type.target?.name ?? 'Unknown'
                     let structure = [ ]
 
-                    if(reference && reference.url){
+                    if(model.url && reference && reference.url){
                         let from = parse(join(this.options._values.out, model.url))
                         let to = parse(join(this.options._values.out, reference.url))
                         let final = relative(from.dir, to.dir)
@@ -366,8 +381,19 @@ class CustomMarkdownThemeContext extends MarkdownThemeContext {
                     return structure.join('')
                 case 'query':
                     return this.partials.type(model, type.queryType, wrap)
-            }
+                case 'reflection':
+                    if(expand){
+                        let structure = [ ]
+                        for(let group of type.declaration.groups ?? [ ]){
+                            push(structure, `## ${group.title}`)
+                            for(let property of group.children){
+                                push(structure, this.partials.property(model, property))
+                            } 
+                        }
 
+                        return structure.length ? structure.join('\n\n') : `\`${type.toString()}\``
+                    } else return `\`${type.toString()}\``
+            }
             if( wrap ) return `\`${type.toString()}\``
             return `${type.toString()}`
         }

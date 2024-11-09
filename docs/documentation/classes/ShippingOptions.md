@@ -11,14 +11,13 @@ prev: false
 export Class
 # ShippingOptions
 #### extends
- `Builder`
+ [`Builder`](./Builder.md)
 
 ## Constructor
- ```ts
+```ts
  new ShippingOptions( ...shippings )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...shippings` | [`ShippingOptionPayload[]`](../interfaces/ShippingOptionPayload.md) | Available shipping options for flexible invoices. |
 

@@ -11,14 +11,13 @@ prev: false
 export Class
 # MessageEntities
 #### extends
- `Builder`
+ [`Builder`](./Builder.md)
 
 ## Constructor
- ```ts
+```ts
  new MessageEntities( ...entites )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `...entites` | [`MessageEntitiesType[]`](../type-aliases/MessageEntitiesType.md) | The entities to attach to the message. |
 

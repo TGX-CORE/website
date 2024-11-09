@@ -12,12 +12,11 @@ export Function
 # Video
 
 ## Constructor
- ```ts
+```ts
  Media.Video( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`InputMediaVideoPayload`](../../../interfaces/InputMediaVideoPayload.md) | The payload of what the media contains. |
 
-Return: Object
+Return: `Object`

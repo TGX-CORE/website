@@ -136,32 +136,21 @@ export default defineConfig({
   },
   themeConfig: {
     search: {
-      provider: 'local',
-      // options: {
-      //   appId: 'ZVXGWWDWD0',
-      //   apiKey: '7b1bc6ad54891601d61904a1eaf66e2e',
-      //   indexName: 'tgx-core'
-      // }
-    },
+      provider: 'algolia',
+      options: {
+        appId: '7ZV8PCTGYB',
+        apiKey: 'a053d8d4f163c124a350617f3253cc68',
+        indexName: 'tgx-core-js'
+      }
+    }, 
 
     footer: {
       message: 'A modern, powerful library for building your Telegram bots, with seamless support for both JavaScript and Typescript.'
     },
 
     nav: [
-      { text: 'Documentation', link: '/documentation/' },
+      { text: 'Documentation', link: '/documentation/README' },
       { text: 'Guidebook', link: '/guidebook/'},
-      // {
-      //   text: 'TGX-CORE', items: [
-          
-      //   ]
-      // },
-      // {
-      //   text: 'Telegram', items: [
-      //     { text: 'TGX-CORE Developers', link: 'https://t.me/+reMnoPhHePAwODA1' },
-      //     { text: 'TGX-CORE Devs', link: 'https://t.me/tgxcore' }
-      //   ]
-      // },
       { text: 'Github', items: [
         { text: 'Releases', link: 'https://github.com/TGX-CORE/tgx-core/releases' },
         { text: 'Issues', link: 'https://github.com/TGX-CORE/tgx-core/issues' }
@@ -169,26 +158,26 @@ export default defineConfig({
     ],
 
     sidebar: {
-      '/documentation': [
-        {
-          text: 'Documentation',
-          items: generateSidebarItems(
-            path.resolve(__dirname, '../documentation'), 
-            '/documentation',
-            true
-          )
-        }
-      ],
+      '/documentation': generateSidebarItems(
+        path.resolve(__dirname, '../documentation'), 
+        '/documentation',
+        true
+      ),
+      // [
+      //   {
+      //     text: 'Documentation',
+      //     items: 
+      //   }
+      // ],
 
-      '/guidebook': [
-        {
-          text: 'Guidebook',
-          items: generateSidebarItems(
-            path.resolve(__dirname, '../guidebook'), 
-            '/guidebook'
-          )
-        }
-      ],
+      '/guidebook': generateSidebarItems(
+        path.resolve(__dirname, '../guidebook'), 
+        '/guidebook'
+      ),
+        // {
+        //   text: 'Guidebook',
+        //   items: 
+        // }
 
     },
 

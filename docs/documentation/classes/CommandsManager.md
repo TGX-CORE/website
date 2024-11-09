@@ -14,17 +14,22 @@ export Class
  `BaseManager`
 
 ## Constructor
- ```ts
+```ts
  new CommandsManager( client, pointer, defaults )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `pointer?` | `string` | |
 | `defaults?` | `any` | |
 
 ## Properties
+
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### $readonly client : [`Client`](./Client.md)
 
@@ -64,10 +69,12 @@ export Class
 > 
 > Returns: `Promise`<`boolean`>
 
-#### $asyncset( payload )
+#### $asyncset( commands, language_code, scope )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `payload` | [`CommandsPayload`](../interfaces/CommandsPayload.md) | The payload to update the commands. |
+| `commands` | `string` \| [`CommandsBuilder`](./CommandsBuilder.md) | The list of commands that are relevant, must be a JSON-serialized object. |
+| `language_code?` | `string` | The language code that are relevant to. |
+| `scope?` | `string` \| [`CommandsScopeBuilder`](./CommandsScopeBuilder.md) | The scope of the commands that are releaven to, must be a JSON-serialized object. |
 > Set the commands.
 > 
 > Returns: `Promise`<`boolean`>

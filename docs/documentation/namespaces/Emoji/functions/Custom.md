@@ -12,11 +12,10 @@ export Function
 # Custom
 
 ## Constructor
- ```ts
+```ts
  Emoji.Custom( custom_emoji_id )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `custom_emoji_id` | `string` | |
 

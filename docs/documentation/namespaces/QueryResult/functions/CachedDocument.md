@@ -12,11 +12,10 @@ export Function
 # CachedDocument
 
 ## Constructor
- ```ts
+```ts
  QueryResult.CachedDocument( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultCachedDocumentPayload`](../../../interfaces/QueryResultCachedDocumentPayload.md) | The payload for the cached document query result. |
 

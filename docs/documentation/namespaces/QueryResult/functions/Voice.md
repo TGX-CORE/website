@@ -12,11 +12,10 @@ export Function
 # Voice
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Voice( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultVoicePayload`](../../../interfaces/QueryResultVoicePayload.md) | The payload for the voice query result. |
 

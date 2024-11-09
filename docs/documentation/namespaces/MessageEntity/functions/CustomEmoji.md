@@ -12,11 +12,10 @@ export Function
 # CustomEmoji
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.CustomEmoji( offset, length, custom_emoji_id )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

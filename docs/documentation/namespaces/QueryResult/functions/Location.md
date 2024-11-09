@@ -12,11 +12,10 @@ export Function
 # Location
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Location( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultLocationPayload`](../../../interfaces/QueryResultLocationPayload.md) | The payload for the location query result. |
 

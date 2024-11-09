@@ -15,6 +15,8 @@ export Interface
 
 ## Properties
 
+#### allow_paid_broadcast? : `boolean`
+
 #### animation : [`InputFile`](../type-aliases/InputFile.md)
 
 #### business_connection_id? : `string`
@@ -41,7 +43,7 @@ export Interface
 
 #### protect_content? : `boolean`
 
-#### reply_markup? : [`InlineKeyboardMarkup`](../classes/InlineKeyboardMarkup.md) \| [`ReplyKeyboardMarkup`](../classes/ReplyKeyboardMarkup.md) \| [`ForceReply`](../classes/ForceReply.md) \| [`ReplyKeyboardRemove`](../classes/ReplyKeyboardRemove.md)
+#### reply_markup? : [`InlineKeyboardMarkup`](../classes/InlineKeyboardMarkup.md) \| [`ReplyKeyboardMarkup`](../classes/ReplyKeyboardMarkup.md) \| [`ReplyKeyboardRemove`](../classes/ReplyKeyboardRemove.md) \| [`ForceReply`](../classes/ForceReply.md)
 
 #### reply_parameters? : [`ReplyParameters`](./ReplyParameters.md)
 

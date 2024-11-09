@@ -18,11 +18,10 @@ export Class
 Represents an incoming inline query.
 
 ## Constructor
- ```ts
+```ts
  new InlineQuery( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | The client of the incoming inline query. |
 | `packet` | [`InlineQueryPacket`](../interfaces/InlineQueryPacket.md) | The packet of the incoming inline query. |
@@ -31,7 +30,7 @@ Represents an incoming inline query.
 
 #### $get user : [`User`](./User.md)
 
-#### chat_type? : `"channel"` \| `"private"` \| `"group"` \| `"supergroup"`
+#### chat_type? : `"private"` \| `"group"` \| `"supergroup"` \| `"channel"`
 
 #### $readonly client : [`Client`](./Client.md)
 

@@ -12,11 +12,10 @@ export Function
 # Bold
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.Bold( offset, length )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

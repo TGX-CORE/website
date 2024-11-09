@@ -12,11 +12,10 @@ export Function
 # TextLink
 
 ## Constructor
- ```ts
+```ts
  MessageEntity.TextLink( offset, length, url )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `offset` | `number` | |
 | `length` | `number` | |

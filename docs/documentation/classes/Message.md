@@ -16,11 +16,10 @@ export Class
  `Omit`<[`MessagePacket`](../interfaces/MessagePacket.md), `"entities"` \| `"caption_entities"`>
 
 ## Constructor
- ```ts
+```ts
  new Message( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`MessagePacket`](../interfaces/MessagePacket.md) | |

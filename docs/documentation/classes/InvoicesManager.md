@@ -14,17 +14,22 @@ export Class
  `CachedManager`<`string`, [`Invoice`](./Invoice.md)>
 
 ## Constructor
- ```ts
+```ts
  new InvoicesManager( client )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 
 ## Properties
 
 #### $get cache : `Collection`<`CachedManager.K`, `CachedManager.V`>
+
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### $readonly client : [`Client`](./Client.md)
 
@@ -69,9 +74,9 @@ export Class
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `id` | `string` | The id of the invoice. |
-> Returns the invoice link or invoice.
+> Returns an invoice link, invoice or false if the invoice is not found.
 > 
-> Returns: `String` \| `Boolean` \| `Partial`<[`Invoice`](./Invoice.md)>
+> Returns: `false` \| `String` \| `Partial`<[`Invoice`](./Invoice.md)>
 
 #### $asyncsend( id, chat_id )
 | Parameter | Type | Description |
@@ -80,7 +85,7 @@ export Class
 | `chat_id` | `number` | The target chat to send the invoice to. |
 > This will only work with invoices and not link invoices!
 > 
-> Returns: `Promise`<`void` \| [`Message`](./Message.md)>
+> Returns: `Promise`<`null` \| [`Message`](./Message.md)>
 
 #### setToken( token )
 | Parameter | Type | Description |

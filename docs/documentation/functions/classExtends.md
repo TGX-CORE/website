@@ -12,13 +12,12 @@ export Function
 # classExtends
 
 ## Constructor
- ```ts
+```ts
  classExtends( value, base )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `value` | `AbstractCtor` | |
+| `value` | `unknown` | |
 | `base` | `T` | |
 
 Return: value is T

@@ -12,12 +12,11 @@ export Function
 # Audio
 
 ## Constructor
- ```ts
+```ts
  Media.Audio( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`InputMediaAudioPayload`](../../../interfaces/InputMediaAudioPayload.md) | The payload of what the media contains. |
 
-Return: Object
+Return: `Object`

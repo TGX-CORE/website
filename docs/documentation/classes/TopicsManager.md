@@ -14,17 +14,22 @@ export Class
  `CachedManager`<`number`, [`ForumTopic`](./ForumTopic.md)>
 
 ## Constructor
- ```ts
+```ts
  new TopicsManager( chat )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `chat` | [`SuperGroupChat`](./SuperGroupChat.md) | |
 
 ## Properties
 
 #### $get cache : `Collection`<`CachedManager.K`, `CachedManager.V`>
+
+#### $get defaults : `Function`
+
+#### $get isJson : `Function`
+
+#### $get nest : `Function`
 
 #### $readonly chat : [`SuperGroupChat`](./SuperGroupChat.md)
 

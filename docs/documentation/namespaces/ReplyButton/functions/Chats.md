@@ -12,11 +12,10 @@ export Function
 # Chats
 
 ## Constructor
- ```ts
+```ts
  ReplyButton.Chats( text, request_chat )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `text` | `string` | Label text on the button. |
 | `request_chat` | [`RequestChat`](../../../interfaces/RequestChat.md) | Chat request object. |

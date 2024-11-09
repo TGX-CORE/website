@@ -15,23 +15,26 @@ export Class
 #### implements
  `Partial`<[`CallbackQueryPacket`](../interfaces/CallbackQueryPacket.md)>
 
+Represents a callback query.
+
 ## Constructor
- ```ts
+```ts
  new CallbackQuery( client, packet )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
 | `packet` | [`CallbackQueryPacket`](../interfaces/CallbackQueryPacket.md) | |
 
 ## Properties
 
-#### $get chat : [`SuperGroupChat`](./SuperGroupChat.md) \| [`GroupChat`](./GroupChat.md) \| [`ChannelChat`](./ChannelChat.md) \| [`PrivateChat`](./PrivateChat.md)
+#### $get chat : [`Chat`](../type-aliases/Chat.md)
 
-#### $get message : `undefined` \| [`Message`](./Message.md)
+#### $get message : [`Message`](./Message.md)
 
 #### $get user : [`User`](./User.md)
+
+#### _from : `number`
 
 #### _message : `number`
 

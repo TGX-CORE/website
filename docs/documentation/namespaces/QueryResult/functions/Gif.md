@@ -12,11 +12,10 @@ export Function
 # Gif
 
 ## Constructor
- ```ts
+```ts
  QueryResult.Gif( payload )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `payload` | [`QueryResultGifPayload`](../../../interfaces/QueryResultGifPayload.md) | The payload for the GIF query result. |
 

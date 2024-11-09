@@ -12,11 +12,10 @@ export Class
 # Logger
 
 ## Constructor
- ```ts
+```ts
  new Logger( level )
  ```
- 
- | Parameter | Type | Description |
+| Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `level` = `LogLevel.Debug` | `undefined` \| [`LogLevel`](../enumerations/LogLevel.md) | |
 
