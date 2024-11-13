@@ -54,7 +54,7 @@ export Class
 
 #### author_signature? : `string`
 
-#### boost_added? : [`ChatBoostAdded`](../interfaces/ChatBoostAdded.md)
+#### boost_added? : `ChatBoostAdded`
 
 #### business_connection_id? : `string`
 
@@ -64,7 +64,7 @@ export Class
 
 #### channel_chat_created? : `true`
 
-#### chat_background_set? : [`ChatBackground`](../interfaces/ChatBackground.md)
+#### chat_background_set? : `ChatBackground`
 
 #### chat_shared? : [`ChatShared`](../interfaces/ChatShared.md)
 
@@ -90,29 +90,29 @@ export Class
 
 #### external_reply? : [`ExternalReplyInfo`](../interfaces/ExternalReplyInfo.md)
 
-#### forum_topic_closed? : [`ForumTopicClosed`](../interfaces/ForumTopicClosed.md)
+#### forum_topic_closed? : `ForumTopicClosed`
 
-#### forum_topic_created? : [`ForumTopicCreated`](../interfaces/ForumTopicCreated.md)
+#### forum_topic_created? : `ForumTopicCreated`
 
-#### forum_topic_edited? : [`ForumTopicEdited`](../interfaces/ForumTopicEdited.md)
+#### forum_topic_edited? : `ForumTopicEdited`
 
-#### forum_topic_reopened? : [`ForumTopicReopened`](../interfaces/ForumTopicReopened.md)
+#### forum_topic_reopened? : `ForumTopicReopened`
 
 #### forward_origin? : [`MessageOrigin`](../type-aliases/MessageOrigin.md)
 
 #### game? : [`GamePacket`](../interfaces/GamePacket.md)
 
-#### general_forum_topic_hidden? : [`GeneralForumTopicHidden`](../interfaces/GeneralForumTopicHidden.md)
+#### general_forum_topic_hidden? : `GeneralForumTopicHidden`
 
-#### general_forum_topic_unhidden? : [`GeneralForumTopicUnhidden`](../interfaces/GeneralForumTopicUnhidden.md)
+#### general_forum_topic_unhidden? : `GeneralForumTopicUnhidden`
 
-#### giveaway? : [`Giveaway`](../interfaces/Giveaway.md)
+#### giveaway? : `Giveaway`
 
-#### giveaway_completed? : [`GiveawayCompleted`](../interfaces/GiveawayCompleted.md)
+#### giveaway_completed? : `GiveawayCompleted`
 
-#### giveaway_created? : [`GiveawayCreated`](../interfaces/GiveawayCreated.md)
+#### giveaway_created? : `GiveawayCreated`
 
-#### giveaway_winners? : [`GiveawayWinners`](../interfaces/GiveawayWinners.md)
+#### giveaway_winners? : `GiveawayWinners`
 
 #### group_chat_created? : `true`
 
@@ -200,13 +200,13 @@ export Class
 
 #### video? : [`Video`](./Video.md)
 
-#### video_chat_ended? : [`VideoChatEnded`](../interfaces/VideoChatEnded.md)
+#### video_chat_ended? : `VideoChatEnded`
 
-#### video_chat_participants_invited? : [`VideoChatParticipantsInvited`](../interfaces/VideoChatParticipantsInvited.md)
+#### video_chat_participants_invited? : `VideoChatParticipantsInvited`
 
-#### video_chat_scheduled? : [`VideoChatScheduled`](../interfaces/VideoChatScheduled.md)
+#### video_chat_scheduled? : `VideoChatScheduled`
 
-#### video_chat_started? : [`VideoChatStarted`](../interfaces/VideoChatStarted.md)
+#### video_chat_started? : `VideoChatStarted`
 
 #### video_note? : [`VideoNote`](./VideoNote.md)
 
@@ -227,11 +227,12 @@ export Class
 > 
 > Returns: `Promise`<`boolean`>
 
-#### createCallbackCollector( options )
+#### createCallbackCollector( options, filter )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `options` | [`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md) | |
-> 
+| `options` | [`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md) | The options for the collector, the filter is unoverridable. |
+| `filter?` | `Function` | Additional conditions to the filter. |
+> Creates a callback query collector to the chat of the message while filtering only relevant to the message.
 > 
 > Returns: [`CallbackCollector`](./CallbackCollector.md)
 

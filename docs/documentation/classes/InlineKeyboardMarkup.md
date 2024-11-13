@@ -11,7 +11,7 @@ prev: false
 export Class
 # InlineKeyboardMarkup
 #### extends
- [`Builder`](./Builder.md)
+ `Builder`
 
 This object represents an inline keyboard that appears right next to the message it belongs to.
 

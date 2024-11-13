@@ -11,7 +11,7 @@ prev: false
 export Class
 # WebApp
 #### extends
- [`Builder`](../../../classes/Builder.md)
+ `Builder`
 
 ## Constructor
 ```ts

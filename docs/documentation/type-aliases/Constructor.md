@@ -8,5 +8,7 @@ prev: false
 
 ---
 
-export Interface
-# VideoChatStarted
+export TypeAlias
+# Constructor
+
+`Function`

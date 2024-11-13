@@ -19,7 +19,7 @@ export Interface
 
 #### author_signature? : `string`
 
-#### boost_added? : [`ChatBoostAdded`](./ChatBoostAdded.md)
+#### boost_added? : `ChatBoostAdded`
 
 #### business_connection_id? : `string`
 
@@ -31,7 +31,7 @@ export Interface
 
 #### chat? : [`ChatPacket`](./ChatPacket.md)
 
-#### chat_background_set? : [`ChatBackground`](./ChatBackground.md)
+#### chat_background_set? : `ChatBackground`
 
 #### chat_shared? : [`ChatShared`](./ChatShared.md)
 
@@ -57,13 +57,13 @@ export Interface
 
 #### external_reply? : [`ExternalReplyInfo`](./ExternalReplyInfo.md)
 
-#### forum_topic_closed? : [`ForumTopicClosed`](./ForumTopicClosed.md)
+#### forum_topic_closed? : `ForumTopicClosed`
 
-#### forum_topic_created? : [`ForumTopicCreated`](./ForumTopicCreated.md)
+#### forum_topic_created? : `ForumTopicCreated`
 
-#### forum_topic_edited? : [`ForumTopicEdited`](./ForumTopicEdited.md)
+#### forum_topic_edited? : `ForumTopicEdited`
 
-#### forum_topic_reopened? : [`ForumTopicReopened`](./ForumTopicReopened.md)
+#### forum_topic_reopened? : `ForumTopicReopened`
 
 #### forward_origin? : [`MessageOrigin`](../type-aliases/MessageOrigin.md)
 
@@ -71,17 +71,17 @@ export Interface
 
 #### game? : [`GamePacket`](./GamePacket.md)
 
-#### general_forum_topic_hidden? : [`GeneralForumTopicHidden`](./GeneralForumTopicHidden.md)
+#### general_forum_topic_hidden? : `GeneralForumTopicHidden`
 
-#### general_forum_topic_unhidden? : [`GeneralForumTopicUnhidden`](./GeneralForumTopicUnhidden.md)
+#### general_forum_topic_unhidden? : `GeneralForumTopicUnhidden`
 
-#### giveaway? : [`Giveaway`](./Giveaway.md)
+#### giveaway? : `Giveaway`
 
-#### giveaway_completed? : [`GiveawayCompleted`](./GiveawayCompleted.md)
+#### giveaway_completed? : `GiveawayCompleted`
 
-#### giveaway_created? : [`GiveawayCreated`](./GiveawayCreated.md)
+#### giveaway_created? : `GiveawayCreated`
 
-#### giveaway_winners? : [`GiveawayWinners`](./GiveawayWinners.md)
+#### giveaway_winners? : `GiveawayWinners`
 
 #### group_chat_created? : `true`
 
@@ -169,13 +169,13 @@ export Interface
 
 #### video? : [`VideoFilePacket`](./VideoFilePacket.md)
 
-#### video_chat_ended? : [`VideoChatEnded`](./VideoChatEnded.md)
+#### video_chat_ended? : `VideoChatEnded`
 
-#### video_chat_participants_invited? : [`VideoChatParticipantsInvited`](./VideoChatParticipantsInvited.md)
+#### video_chat_participants_invited? : `VideoChatParticipantsInvited`
 
-#### video_chat_scheduled? : [`VideoChatScheduled`](./VideoChatScheduled.md)
+#### video_chat_scheduled? : `VideoChatScheduled`
 
-#### video_chat_started? : [`VideoChatStarted`](./VideoChatStarted.md)
+#### video_chat_started? : `VideoChatStarted`
 
 #### video_note? : [`VideoNoteFilePacket`](./VideoNoteFilePacket.md)
 

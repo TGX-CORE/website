@@ -27,9 +27,9 @@ export Interface
 
 #### game? : [`GamePacket`](./GamePacket.md)
 
-#### giveaway? : [`Giveaway`](./Giveaway.md)
+#### giveaway? : `Giveaway`
 
-#### giveaway_winners? : [`GiveawayWinners`](./GiveawayWinners.md)
+#### giveaway_winners? : `GiveawayWinners`
 
 #### has_media_spoiler? : `boolean`
 

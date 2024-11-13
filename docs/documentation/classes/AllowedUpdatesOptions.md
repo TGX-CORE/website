@@ -11,7 +11,7 @@ prev: false
 export Class
 # AllowedUpdatesOptions
 #### extends
- [`Builder`](./Builder.md)
+ `Builder`
 
 ## Constructor
 ```ts

@@ -13,7 +13,7 @@ export Interface
 
 ## Properties
 
-#### business_connection? : [`BusinessConnectionPacket`](./BusinessConnectionPacket.md)
+#### business_connection? : `BusinessConnectionPacket`
 
 #### business_message? : [`MessagePacket`](./MessagePacket.md)
 
@@ -21,7 +21,7 @@ export Interface
 
 #### channel_post? : [`MessagePacket`](./MessagePacket.md)
 
-#### chat_boost? : [`ChatBoostUpdated`](./ChatBoostUpdated.md)
+#### chat_boost? : `ChatBoostUpdated`
 
 #### chat_join_request? : [`ChatJoinRequestPacket`](./ChatJoinRequestPacket.md)
 
@@ -29,7 +29,7 @@ export Interface
 
 #### chosen_inline_result? : [`ChosenInlineResultPacket`](./ChosenInlineResultPacket.md)
 
-#### deleted_business_messages? : [`BusinessMessagesDeletedPacket`](./BusinessMessagesDeletedPacket.md)
+#### deleted_business_messages? : `BusinessMessagesDeletedPacket`
 
 #### edited_business_message? : [`MessagePacket`](./MessagePacket.md)
 
@@ -55,7 +55,7 @@ export Interface
 
 #### purchased_paid_media? : [`PaidMediaPurchasedPacket`](./PaidMediaPurchasedPacket.md)
 
-#### removed_chat_boost? : [`ChatBoostRemoved`](./ChatBoostRemoved.md)
+#### removed_chat_boost? : `ChatBoostRemoved`
 
 #### shipping_query? : [`ShippingQueryPacket`](./ShippingQueryPacket.md)
 

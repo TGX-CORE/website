@@ -15,12 +15,12 @@ export Class
 
 ## Constructor
 ```ts
- new CallbackCollector( message, options )
+ new CallbackCollector( chat, options )
  ```
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `message` | [`Message`](./Message.md) | |
-| `options` | [`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md) | |
+| `chat` | [`Chat`](../type-aliases/Chat.md) | |
+| `options?` | [`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md) | |
 
 ## Properties
 
@@ -28,17 +28,17 @@ export Class
 
 #### $get next : `Promise`<[`Message`](./Message.md)>
 
+#### chat : [`Chat`](../type-aliases/Chat.md)
+
 #### $readonly client : [`Client`](./Client.md)
 
 #### collection : `Collection`<`string`, `any`>
 
 #### ended : `boolean`
 
-#### filter : [`CollectorFilter`](../type-aliases/CollectorFilter.md)
+#### filter : `CollectorFilter`
 
-#### message : [`Message`](./Message.md)
-
-#### options : [`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md)
+#### options : `undefined` \| [`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md)
 
 #### received : `number`
 
@@ -56,18 +56,18 @@ export Class
 > 
 > Returns: `boolean`
 
-#### collect( query )
+#### collect( collect )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `query` | [`CallbackQuery`](./CallbackQuery.md) | |
+| `collect` | [`CallbackQuery`](./CallbackQuery.md) | |
 > 
 > 
 > Returns: `null` \| `string`
 
-#### dispose( query )
+#### dispose( collect )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `query` | [`CallbackQuery`](./CallbackQuery.md) | |
+| `collect` | [`CallbackQuery`](./CallbackQuery.md) | |
 > 
 > 
 > Returns: `null` \| `string`

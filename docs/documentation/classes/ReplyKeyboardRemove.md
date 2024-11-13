@@ -11,7 +11,7 @@ prev: false
 export Class
 # ReplyKeyboardRemove
 #### extends
- [`Builder`](./Builder.md)
+ `Builder`
 
 Upon receiving a message with this object, Telegram clients will remove the current custom keyboard and display the default letter-keyboard. By default, custom keyboards are displayed until a new keyboard is sent by a bot.
 

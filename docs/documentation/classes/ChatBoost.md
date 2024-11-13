@@ -11,9 +11,9 @@ prev: false
 export Class
 # ChatBoost
 #### extends
- `BaseClass`<[`ChatBoost`](./ChatBoost.md), [`ChatBoostUpdated`](../interfaces/ChatBoostUpdated.md) \| [`ChatBoostRemoved`](../interfaces/ChatBoostRemoved.md)>
+ `BaseClass`<[`ChatBoost`](./ChatBoost.md), `ChatBoostUpdated` \| `ChatBoostRemoved`>
 #### implements
- `Partial`<[`ChatBoostUpdated`](../interfaces/ChatBoostUpdated.md)>,`Partial`<[`ChatBoostRemoved`](../interfaces/ChatBoostRemoved.md)>
+ `Partial`<`ChatBoostUpdated`>,`Partial`<`ChatBoostRemoved`>
 
 ## Constructor
 ```ts
@@ -22,7 +22,7 @@ export Class
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
-| `packet` | [`ChatBoostUpdated`](../interfaces/ChatBoostUpdated.md) \| [`ChatBoostRemoved`](../interfaces/ChatBoostRemoved.md) | |
+| `packet` | `ChatBoostUpdated` \| `ChatBoostRemoved` | |
 
 ## Properties
 
@@ -32,12 +32,10 @@ export Class
 
 #### $get user : [`User`](./User.md)
 
-#### boost? : [`ChatBoostPacket`](../interfaces/ChatBoostPacket.md)
-
-#### boost_id : `string`
+#### boost? : `ChatBoostPacket`
 
 #### $readonly client : [`Client`](./Client.md)
 
 #### remove_date? : `number`
 
-#### source? : [`ChatBoostSource`](../type-aliases/ChatBoostSource.md)
+#### source? : `ChatBoostSource`

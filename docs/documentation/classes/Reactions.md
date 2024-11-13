@@ -11,7 +11,7 @@ prev: false
 export Class
 # Reactions
 #### extends
- [`Builder`](./Builder.md)
+ `Builder`
 
 Represents an array of reactions.
 

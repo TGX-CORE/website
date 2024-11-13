@@ -11,7 +11,7 @@ prev: false
 export Class
 # FormDataBuilder
 #### extends
- [`Builder`](./Builder.md)
+ `Builder`
 
 FormData as a builder for sending files.
 

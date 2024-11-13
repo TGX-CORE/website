@@ -20,7 +20,7 @@ export Class
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `chat` | [`Chat`](../type-aliases/Chat.md) | |
-| `options` = `{}` | [`MessageCollectorOptions`](../interfaces/MessageCollectorOptions.md) | |
+| `options?` | [`MessageCollectorOptions`](../interfaces/MessageCollectorOptions.md) | |
 
 ## Properties
 
@@ -36,9 +36,9 @@ export Class
 
 #### ended : `boolean`
 
-#### filter : [`CollectorFilter`](../type-aliases/CollectorFilter.md)
+#### filter : `CollectorFilter`
 
-#### options : [`MessageCollectorOptions`](../interfaces/MessageCollectorOptions.md)
+#### options : `undefined` \| [`MessageCollectorOptions`](../interfaces/MessageCollectorOptions.md)
 
 #### received : `number`
 

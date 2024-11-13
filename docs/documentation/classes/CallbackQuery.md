@@ -34,11 +34,11 @@ Represents a callback query.
 
 #### $get user : [`User`](./User.md)
 
+#### _chat : `number`
+
 #### _from : `number`
 
 #### _message : `number`
-
-#### _message_chat : `number`
 
 #### chat_instance : `string`
 

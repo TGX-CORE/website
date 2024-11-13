@@ -11,7 +11,7 @@ prev: false
 export Class
 # Start
 #### extends
- [`Builder`](../../../classes/Builder.md)
+ `Builder`
 
 [Deep-linking](https://core.telegram.org/bots/features#deep-linking) parameter for the /start message sent to the bot when a user presses the button. 1-64 characters, only A-Z, a-z, 0-9, _ and - are allowed.
 

@@ -11,18 +11,15 @@ prev: false
 export Interface
 # CallbackCollectorOptions
 #### extends
- [`CollectorOptions`](./CollectorOptions.md)
+ `CollectorOptions`
 
 ## Properties
 
 #### dispose? : `boolean`
- > Wether to emit 'dispose' event when a collected data is disposed or removed.
 
-#### filter? : [`CollectorFilter`](../type-aliases/CollectorFilter.md)
- > The filter of the collector.
+#### filter? : `Function`
 
 #### idle? : `number`
- > The maximum time for the collector to wait after a collection in milliseconds.
 
 #### max? : `number`
  > The maximum count to collect.
@@ -31,4 +28,3 @@ export Interface
  > The maximum count of received datas.
 
 #### time? : `number`
- > The maximum time for the collector to wait in milliseconds.

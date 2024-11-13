@@ -11,7 +11,7 @@ prev: false
 export Class
 # Invoice
 #### extends
- [`Builder`](./Builder.md)
+ `Builder`
 #### implements
  [`StoredInvoice`](../interfaces/StoredInvoice.md)
 

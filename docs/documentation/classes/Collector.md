@@ -20,7 +20,7 @@ export abstract Class
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `client` | [`Client`](./Client.md) | |
-| `options` | `Collector.O` | |
+| `options?` | `Collector.O` | |
 
 ## Properties
 
@@ -34,9 +34,9 @@ export abstract Class
 
 #### ended : `boolean`
 
-#### filter : [`CollectorFilter`](../type-aliases/CollectorFilter.md)
+#### filter : `CollectorFilter`
 
-#### options : `Collector.O`
+#### options : `undefined` \| `Collector.O`
 
 ## Methods
 

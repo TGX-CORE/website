@@ -11,7 +11,7 @@ prev: false
 export Class
 # ForceReply
 #### extends
- [`Builder`](./Builder.md)
+ `Builder`
 
 Upon receiving a message with this object, Telegram clients will display a reply interface to the user (act as if the user has selected the bot's message and tapped 'Reply').
 

@@ -116,10 +116,18 @@ export abstract Class
 > 
 > Returns: `Promise`<[`Member[]`](./Member.md)>
 
+#### createCallbackCollector( options )
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `options?` | [`CallbackCollectorOptions`](../interfaces/CallbackCollectorOptions.md) | The options for the collector. |
+> Creates a callback query collector to the current chat.
+> 
+> Returns: [`CallbackCollector`](./CallbackCollector.md)
+
 #### createMessageCollector( options )
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| `options` | [`MessageCollectorOptions`](../interfaces/MessageCollectorOptions.md) | The options for the collector. |
+| `options?` | [`MessageCollectorOptions`](../interfaces/MessageCollectorOptions.md) | The options for the collector. |
 > Creates a message collector to the current chat.
 > 
 > Returns: [`MessageCollector`](./MessageCollector.md)
